@@ -13,12 +13,37 @@
 * {
   box-sizing: border-box;
 }
-
+body{
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background-color: #0b0b0c;
+    opacity: 0;
+  }
+  &::-webkit-scrollbar-thumb {
+    box-shadow: inset 10px 10px 10px 10px rgb(7, 222, 218);
+    border-radius: 2px;
+  }
+}
 .wrapper {
   width: 100%;
   height: auto;
   background: #0b0b0c;
+  position: relative;
+  
 }
+
+  .logo {
+    position: fixed;
+    top: 40px;
+    left: 50px;
+    width: 80px;
+    height: auto;
+    z-index: 10;
+  }
+
 .welcome__wrapper {
   height: 200vh;
   .welcome {
@@ -41,14 +66,7 @@
         opacity: 0;
       }
     }
-    .logo {
-      position: fixed;
-      top: 40px;
-      left: 50px;
-      width: 80px;
-      height: auto;
-      z-index: 10;
-    }
+
     .social {
       position: absolute;
       left: 50px;
@@ -429,142 +447,259 @@
     }
   }
 }
-.utility {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  .utility-bg {
-    position: absolute;
-    left: 0;
+
+.gorisontal__wrapper {
+  height: 400vh;
+  .gorisontal-container {
+    position: sticky;
     top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 2;
-  }
-  .utility__container {
-    margin: 0 auto;
-    width: 1400px;
-    z-index: 2;
-    .utility__title {
-      position: relative;
-      font-family: "Teko";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 102px;
-      line-height: 102px;
-      text-transform: uppercase;
-      color: #ffffff;
-    }
-    .utility__subtitle {
-      display: flex;
-      align-items: center;
-      margin: 10px 0 0 0;
-      padding: 4px 28px 0 8px;
-      width: 420px;
-      background: #07deda;
-      border-radius: 2px 0px 0px 2px;
-      height: auto;
-      clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
-      font-family: "Teko";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 22px;
-      line-height: 22px;
-      text-transform: uppercase;
-      color: #0b0b0c;
-    }
-    .utility__slider {
-      position: relative;
-      margin: 45px 0 0 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      gap: 343px;
-      .slider__button-container {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        .button {
-          width: 60px;
-          height: 60px;
-          border-radius: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border: 1px solid #ffffff15;
-          background: none;
-          transition: .25s ease-out background;
-          .arrow{
-            width: 20px;
-            height: auto;
-          }
-          &:hover{
-            background: #7732EA;
-          }
-        }
-        .button-next{
-          .arrow{
-            transform: rotate(180deg);
-          }
-        }
-      }
-      .slider__text {
-        position: absolute;
-        width: 690px;
-        left: 0;
-        bottom: 135px;
-        font-family: "SF UI Display";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 22px;
-        line-height: 32px;
-        color: #ffffff;
-      }
-      .utility__number-container {
-        width: 170px;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        #first-number {
-          font-family: "Teko";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 102px;
-          line-height: 77px;
-          text-transform: uppercase;
-          color: #ffffff;
-        }
-        #last-number {
-          font-family: "Teko";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 52px;
-          line-height: 52px;
-          text-transform: uppercase;
-          color: #ffffff;
-          opacity: 0.1;
-        }
-      }
-    }
-  }
-  .utility__slide{
-    position: absolute;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
     left: 0;
-    bottom: 0;
-    transform: translateY(100%);
-    opacity: 0;
-    transition: .5s ease-in-out transform, .5s ease-in-out opacity;
-    &.active{
-      transform: translateY(0);
-      opacity: 1;
-      z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    .gorisontal-content {
+      display: flex;
+      width: 200%;
+      transform: translateX(0);
+      transition: 0.75s ease-in-out transform;
+      &.step-one {
+        transform: translateX(-50%);
+      }
+      .utility {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        .utility-bg {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: 2;
+        }
+        .utility__container {
+          margin: 0 auto;
+          width: 1400px;
+          z-index: 2;
+          .utility__title {
+            position: relative;
+            font-family: "Teko";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 102px;
+            line-height: 102px;
+            text-transform: uppercase;
+            color: #ffffff;
+          }
+          .utility__subtitle {
+            display: flex;
+            align-items: center;
+            margin: 10px 0 0 0;
+            padding: 4px 28px 0 8px;
+            width: 420px;
+            background: #07deda;
+            border-radius: 2px 0px 0px 2px;
+            height: auto;
+            clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+            font-family: "Teko";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 22px;
+            text-transform: uppercase;
+            color: #0b0b0c;
+          }
+          .utility__slider {
+            position: relative;
+            margin: 45px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 343px;
+            .slider__button-container {
+              display: flex;
+              flex-direction: column;
+              gap: 15px;
+              .button {
+                width: 60px;
+                height: 60px;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #ffffff15;
+                background: none;
+                transition: 0.25s ease-out background;
+                .arrow {
+                  width: 20px;
+                  height: auto;
+                }
+                &:hover {
+                  background: #7732ea;
+                }
+              }
+              .button-next {
+                .arrow {
+                  transform: rotate(180deg);
+                }
+              }
+            }
+            .slider__text {
+              position: absolute;
+              width: 690px;
+              left: 0;
+              bottom: 135px;
+              font-family: "SF UI Display";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 22px;
+              line-height: 32px;
+              color: #ffffff;
+              opacity: 0;
+              transform: translateY(100%);
+              transition: 0.5s ease-in-out transform, 0.5s ease-in-out opacity;
+              &.active {
+                opacity: 1;
+                transform: translateY(0);
+              }
+              &.noactive {
+                transform: translateY(-200%);
+              }
+            }
+            .utility__number-container {
+              width: 170px;
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-end;
+              #first-number {
+                font-family: "Teko";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 102px;
+                line-height: 77px;
+                text-transform: uppercase;
+                color: #ffffff;
+              }
+              #last-number {
+                font-family: "Teko";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 52px;
+                line-height: 52px;
+                text-transform: uppercase;
+                color: #ffffff;
+                opacity: 0.1;
+              }
+            }
+          }
+        }
+        .utility__slide {
+          position: absolute;
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          left: 0;
+          bottom: 0;
+          transform: translateY(100%);
+          opacity: 0;
+          transition: 0.5s ease-in-out transform, 0.5s ease-in-out opacity;
+          &.active {
+            transform: translateY(0);
+            opacity: 1;
+            z-index: 1;
+          }
+          &.noactive {
+            transform: translateY(0);
+            opacity: 0;
+          }
+        }
+      }
+      .roadmap {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .roadmap__continer {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          .roadmap__title {
+            font-family: "Teko";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 242px;
+            line-height: 242px;
+            text-transform: uppercase;
+            color: #ffffff;
+            transform: translateX(94%);
+            transition: 0.75s ease-in-out transform;
+          }
+          .roadmap__subtitle {
+            font-family: "SF UI Display";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 32px;
+            color: #ffffff;
+            transform: translateX(154%);
+            transition: 0.75s ease-in-out .05s transform;
+          }
+          .roadmap__description {
+            width: 440px;
+            font-family: "SF UI Display";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #ffffff;
+            transform: translateX(350%);
+            transition: 0.75s ease-in-out .1s transform;
+          }
+        }
+        &.step-one{
+          .roadmap__continer{
+            .roadmap__title{
+              transform: translateX(0);
+            }
+            .roadmap__subtitle{
+              transform: translateX(78%);
+            }
+            .roadmap__description{
+              transform: translateX(190%);
+            }
+          }
+        }
+        &.step-two{
+          .roadmap__continer{
+            .roadmap__title{
+              transform: translateX(-80%);
+            }
+            .roadmap__subtitle{
+              transform: translateX(52%);
+            }
+            .roadmap__description{
+              transform: translateX(41%);
+            }
+          }
+        }
+        &.step-three{
+          .roadmap__continer{
+            .roadmap__title{
+              transform: translateX(-155%);
+            }
+            .roadmap__subtitle{
+              transform: translateX(10%);
+            }
+            .roadmap__description{
+              transform: translateX(-102%);
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -10,7 +10,11 @@ window.onload = function () {
     isPlayPause = false,
     progress = document.querySelector("#progress"),
     welcomeBg = document.querySelector(".welcome-bg"),
-    videoWrapper = document.querySelector(".video__wrapper");
+    videoWrapper = document.querySelector(".video__wrapper"),
+    slides = document.querySelectorAll(".utility__slide"),
+    slidesText = document.querySelectorAll(".slider__text"),
+    gorisontalContent = document.querySelector('.gorisontal-content'),
+    roadmap = document.querySelector('.roadmap')
 
   // player
   video.ontimeupdate = progressUpdate;
@@ -57,24 +61,6 @@ window.onload = function () {
     }
   }
 
-  //   (function () {
-  //     var isPlayPause = false;
-  //     playPause.addEventListener("click", function () {
-  //       if (isPlayPause) {
-  //         video.pause();
-  //         playPause.classList.remove("active");
-  //         play.style.display = "block";
-  //         pause.style.display = "none";
-  //         isPlayPause = false;
-  //       } else {
-  //         video.play();
-  //         play.style.display = "none";
-  //         pause.style.display = "block";
-  //         playPause.classList.add("active");
-  //         isPlayPause = true;
-  //       }
-  //     });
-  //   })();
 
   muted.addEventListener("click", mutedOnOff);
 
@@ -120,6 +106,33 @@ window.onload = function () {
       welcomeBg.classList.remove("active");
       videoWrapper.classList.remove("active");
     }
+
+    if(scrollTop >= screenHeight * 3.5) {
+     gorisontalContent.classList.add('step-one')
+    }
+    else{
+      gorisontalContent.classList.remove('step-one')
+    }
+    if(scrollTop >= screenHeight * 4) {
+      roadmap.classList.add('step-one')
+    }
+    else{
+      roadmap.classList.remove('step-one')
+    }
+    if(scrollTop >= screenHeight * 4.5) {
+      roadmap.classList.add('step-two')
+      roadmap.classList.remove('step-one')
+    }
+    else{
+      roadmap.classList.remove('step-two')
+    }
+    if(scrollTop >= screenHeight * 5) {
+      roadmap.classList.add('step-three')
+      roadmap.classList.remove('step-two')
+    }
+    else{
+      roadmap.classList.remove('step-three')
+    }
   };
 
   //   colection-slide
@@ -164,10 +177,7 @@ window.onload = function () {
     lastNumber = document.querySelector("#last-number");
 
   // Set the initial slide index
-  var slideIndex = 1;
-
-  // Show the first slide
-  showSlide(slideIndex);
+  let slideIndex = 1;
 
   // Add event listeners to the previous and next buttons
   prevBtn.addEventListener("click", function () {
@@ -181,8 +191,8 @@ window.onload = function () {
   slider.addEventListener("touchstart", handleTouchStart, false);
   slider.addEventListener("touchmove", handleTouchMove, false);
 
-  var xDown = null;
-  var yDown = null;
+  let xDown = null;
+  let yDown = null;
 
   function handleTouchStart(evt) {
     xDown = evt.touches[0].clientX;
@@ -194,11 +204,11 @@ window.onload = function () {
       return;
     }
 
-    var xUp = evt.touches[0].clientX;
-    var yUp = evt.touches[0].clientY;
+    let xUp = evt.touches[0].clientX;
+    let yUp = evt.touches[0].clientY;
 
-    var xDiff = xDown - xUp;
-    var yDiff = yDown - yUp;
+    let xDiff = xDown - xUp;
+    let yDiff = yDown - yUp;
 
     if (Math.abs(xDiff) > Math.abs(yDiff)) {
       /*most significant*/
@@ -217,8 +227,8 @@ window.onload = function () {
 
   // Function to show a specific slide
   function showSlide(n) {
-    var i;
-    var slides = document.querySelectorAll(".utility__slide");
+    let i;
+
 
     // Ensure that the slide index stays within the bounds of the slides array
     if (n > slides.length) {
@@ -231,27 +241,33 @@ window.onload = function () {
     // Hide all slides
     for (i = 0; i < slides.length; i++) {
       slides[i].classList.remove("active");
-      slides[i].classList.add("noactive");
-      if (i >= 1) {
-        if (i >= 2) slides[i - 1].classList.remove("noactive");
-      }
+      slides[i].classList.remove("noactive");
+      slidesText[i].classList.remove("active");
+      slidesText[i].classList.remove("noactive");
 
       if (slides.length <= 9) {
         lastNumber.innerHTML = "/0" + slides.length;
-      }
-      else{
+      } else {
         lastNumber.innerHTML = "/" + slides.length;
       }
-      if(slideIndex <= 9) {
+      if (slideIndex <= 9) {
         firstNumber.innerHTML = "0" + slideIndex;
-      }
-      else{
+      } else {
         firstNumber.innerHTML = slideIndex;
       }
     }
 
     // Show the current slide
     slides[slideIndex - 1].classList.add("active");
-    slides[slideIndex - 1].classList.remove("noactive");
+    slidesText[slideIndex - 1].classList.add("active");
+    if (slideIndex >= 2) {
+      slides[slideIndex - 2].classList.add("noactive");
+      slidesText[slideIndex - 2].classList.add("noactive");
+
+    } 
+    else{
+      slides[i - 1].classList.add("noactive");
+      slidesText[i - 1].classList.add("noactive");
+    }
   }
 };

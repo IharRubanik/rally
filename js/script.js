@@ -13,8 +13,11 @@ window.onload = function () {
     videoWrapper = document.querySelector(".video__wrapper"),
     slides = document.querySelectorAll(".utility__slide"),
     slidesText = document.querySelectorAll(".slider__text"),
-    gorisontalContent = document.querySelector('.gorisontal-content'),
-    roadmap = document.querySelector('.roadmap')
+    verticalContent = document.querySelector(".vertical-content"),
+    roadmap = document.querySelector(".roadmap"),
+    slideWrapper = document.querySelector(".slide-wrapper"),
+    autoContainer = document.querySelector(".auto__container"),
+    circleSlide = document.querySelectorAll(".circle-slide");
 
   // player
   video.ontimeupdate = progressUpdate;
@@ -61,7 +64,6 @@ window.onload = function () {
     }
   }
 
-
   muted.addEventListener("click", mutedOnOff);
 
   function mutedOnOff() {
@@ -90,6 +92,7 @@ window.onload = function () {
       : document.documentElement.scrollTop
       ? document.documentElement.scrollTop
       : document.body.scrollTop;
+    console.log(scrollTop);
     if (scrollTop >= screenHeight / 6) {
       welcomeBg.classList.add("active");
       videoWrapper.classList.add("active");
@@ -107,33 +110,74 @@ window.onload = function () {
       videoWrapper.classList.remove("active");
     }
 
-    if(scrollTop >= screenHeight * 3.5) {
-     gorisontalContent.classList.add('step-one')
+    if (scrollTop >= screenHeight * 3) {
+      verticalContent.classList.add("step-one");
+    } else {
+      verticalContent.classList.remove("step-one");
     }
-    else{
-      gorisontalContent.classList.remove('step-one')
+    if (scrollTop >= screenHeight * 3.5) {
+      roadmap.classList.add("step-one");
+    } else {
+      roadmap.classList.remove("step-one");
     }
-    if(scrollTop >= screenHeight * 4) {
-      roadmap.classList.add('step-one')
+    if (scrollTop >= screenHeight * 4) {
+      roadmap.classList.add("step-two");
+      roadmap.classList.remove("step-one");
+    } else {
+      roadmap.classList.remove("step-two");
     }
-    else{
-      roadmap.classList.remove('step-one')
+    if (scrollTop >= screenHeight * 5.5) {
+      slideWrapper.classList.add("one");
+      autoContainer.classList.replace("right", "left");
+      addClacc(1)
+    } else {
+      slideWrapper.classList.remove("one");
+      autoContainer.classList.replace("left", "right");
+      addClacc(0)
     }
-    if(scrollTop >= screenHeight * 4.5) {
-      roadmap.classList.add('step-two')
-      roadmap.classList.remove('step-one')
+    if (scrollTop >= screenHeight * 6) {
+      slideWrapper.classList.add("two");
+      autoContainer.classList.replace("left", "right");
+      addClacc(2)
+    } else {
+      slideWrapper.classList.remove("two");
     }
-    else{
-      roadmap.classList.remove('step-two')
+    if (scrollTop >= screenHeight * 6.5) {
+      slideWrapper.classList.add("three");
+      autoContainer.classList.replace("right", "left");
+      addClacc(3)
+    } else {
+      slideWrapper.classList.remove("three");
     }
-    if(scrollTop >= screenHeight * 5) {
-      roadmap.classList.add('step-three')
-      roadmap.classList.remove('step-two')
+    if (scrollTop >= screenHeight * 7) {
+      slideWrapper.classList.add("four");
+      autoContainer.classList.replace("left", "right");
+      addClacc(4)
+    } else {
+      slideWrapper.classList.remove("four");
     }
-    else{
-      roadmap.classList.remove('step-three')
+    if (scrollTop >= screenHeight * 7.5) {
+      slideWrapper.classList.add("five");
+      autoContainer.classList.replace("right", "left");
+      addClacc(5)
+    } else {
+      slideWrapper.classList.remove("five");
+    }
+    if (scrollTop >= screenHeight * 8) {
+      slideWrapper.classList.add("six");
+      autoContainer.classList.replace("left", "right");
+      addClacc(6)
+    } else {
+      slideWrapper.classList.remove("six");
     }
   };
+  function addClacc(slide) {
+    for (let i = 0; i < circleSlide.length; i++) {
+      circleSlide[i].classList.remove('active')
+    }
+    circleSlide[slide].classList.add('active')
+
+  }
 
   //   colection-slide
   let colectionSlide1 = document.querySelectorAll(".colection-slide1");
@@ -229,7 +273,6 @@ window.onload = function () {
   function showSlide(n) {
     let i;
 
-
     // Ensure that the slide index stays within the bounds of the slides array
     if (n > slides.length) {
       slideIndex = 1;
@@ -263,9 +306,7 @@ window.onload = function () {
     if (slideIndex >= 2) {
       slides[slideIndex - 2].classList.add("noactive");
       slidesText[slideIndex - 2].classList.add("noactive");
-
-    } 
-    else{
+    } else {
       slides[i - 1].classList.add("noactive");
       slidesText[i - 1].classList.add("noactive");
     }

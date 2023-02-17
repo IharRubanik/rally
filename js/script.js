@@ -135,35 +135,35 @@ window.onload = function () {
       autoContainer.classList.replace("left", "right");
       addClacc(0)
     }
-    if (scrollTop >= screenHeight * 6) {
+    if (scrollTop >= screenHeight * 6.5) {
       slideWrapper.classList.add("two");
       autoContainer.classList.replace("left", "right");
       addClacc(2)
     } else {
       slideWrapper.classList.remove("two");
     }
-    if (scrollTop >= screenHeight * 6.5) {
+    if (scrollTop >= screenHeight * 7.5) {
       slideWrapper.classList.add("three");
       autoContainer.classList.replace("right", "left");
       addClacc(3)
     } else {
       slideWrapper.classList.remove("three");
     }
-    if (scrollTop >= screenHeight * 7) {
+    if (scrollTop >= screenHeight * 8.5) {
       slideWrapper.classList.add("four");
       autoContainer.classList.replace("left", "right");
       addClacc(4)
     } else {
       slideWrapper.classList.remove("four");
     }
-    if (scrollTop >= screenHeight * 7.5) {
+    if (scrollTop >= screenHeight * 9.5) {
       slideWrapper.classList.add("five");
       autoContainer.classList.replace("right", "left");
       addClacc(5)
     } else {
       slideWrapper.classList.remove("five");
     }
-    if (scrollTop >= screenHeight * 8) {
+    if (scrollTop >= screenHeight * 10.5) {
       slideWrapper.classList.add("six");
       autoContainer.classList.replace("left", "right");
       addClacc(6)
@@ -176,7 +176,6 @@ window.onload = function () {
       circleSlide[i].classList.remove('active')
     }
     circleSlide[slide].classList.add('active')
-
   }
 
   //   colection-slide

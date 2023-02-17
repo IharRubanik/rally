@@ -9,7 +9,6 @@
     background-position: 0% 0%;
   }
 }
-
 * {
   box-sizing: border-box;
 }
@@ -17,7 +16,6 @@ body {
   &::-webkit-scrollbar {
     width: 10px;
   }
-
   &::-webkit-scrollbar-track {
     background-color: #0b0b0c;
     opacity: 0;
@@ -33,7 +31,6 @@ body {
   background: #0b0b0c;
   position: relative;
 }
-
 .logo {
   position: fixed;
   top: 40px;
@@ -42,7 +39,6 @@ body {
   height: auto;
   z-index: 10;
 }
-
 .welcome__wrapper {
   height: 200vh;
   .welcome {
@@ -187,7 +183,6 @@ body {
         color: #ffffff;
       }
     }
-
     .video__wrapper {
       position: absolute;
       padding: 30px;
@@ -446,7 +441,6 @@ body {
     }
   }
 }
-
 .vertical__wrapper {
   height: 300vh;
   .vertical-container {
@@ -646,15 +640,15 @@ body {
             color: #ffffff;
           }
           .roadmap__subtitle {
-            font-family: "SF UI Display";
+            font-family: "Teko";
             font-style: normal;
             font-weight: 700;
             font-size: 22px;
-            line-height: 32px;
-            color: #ffffff;
+            line-height: 22px;
+            color: #0b0b0c;
             background: #07deda;
             display: block;
-            padding: 0 20px 0 8px;
+            padding: 0.4% 20px 0 8px;
             border-radius: 2px 0px 0px 2px;
             width: max-content;
             clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
@@ -699,14 +693,12 @@ body {
     }
   }
 }
-
 .road {
   width: 100%;
-  height: auto;
   transition: 0.75s ease-in-out margin;
   margin: -30vh 0 0 0;
   position: relative;
-  height: 550vh;
+  height: 850vh;
   .road__container {
     margin: 0 auto;
     width: 1400px;
@@ -715,7 +707,6 @@ body {
     left: 0;
     top: 0;
     overflow: hidden;
-
     .slide-wrapper {
       width: 100%;
       transition: 1.5s ease-in-out transform;
@@ -723,7 +714,7 @@ body {
       .road__background {
         position: absolute;
         width: 100%;
-        height: 100%;
+        height: 99%;
         top: 0;
         left: 0;
         z-index: -1;
@@ -751,7 +742,6 @@ body {
         display: flex;
         gap: 107px;
         padding: 265px 0 0 0;
-
         &.right {
           justify-content: end;
           flex-direction: row-reverse;
@@ -760,7 +750,7 @@ body {
               &::after {
                 left: 0;
                 right: auto;
-                transform: translateX(-192%);
+                transform: translateX(-160%);
               }
             }
           }
@@ -778,6 +768,7 @@ body {
           display: flex;
           flex-direction: column;
           .date {
+            width: 200px;
             font-family: "Teko";
             font-style: normal;
             font-weight: 700;
@@ -792,7 +783,7 @@ body {
               content: "";
               right: 0;
               top: 41.6%;
-              transform: translateX(117%);
+              transform: translateX(166%);
               display: block;
               background: #c5c5c5;
               mix-blend-mode: color-dodge;
@@ -840,13 +831,12 @@ body {
         }
       }
     }
-
     .auto__wrapper {
       position: absolute;
       left: 0;
       top: 0;
       width: 100%;
-      .auto__container{
+      .auto__container {
         position: relative;
         width: 588px;
         margin: 0 auto;
@@ -856,7 +846,7 @@ body {
         }
         &.left {
           transform: translateX(-40%);
-          .auto-circle{
+          .auto-circle {
             transform: translateX(10%);
           }
         }
@@ -875,7 +865,7 @@ body {
             z-index: 2;
             position: relative;
           }
-          .circle-slide{
+          .circle-slide {
             position: absolute;
             top: 0;
             left: 0;
@@ -887,9 +877,272 @@ body {
             -webkit-box-shadow: 0px 0px 100px 47px rgba(0, 0, 0, 0.74);
             -moz-box-shadow: 0px 0px 100px 47px rgba(0, 0, 0, 0.74);
             box-shadow: 0px 0px 100px 47px rgba(0, 0, 0, 0.74);
-            &.active{
+            &.active {
               opacity: 1;
             }
+          }
+        }
+      }
+    }
+  }
+}
+.about {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .car {
+    position: absolute;
+    right: 62px;
+    bottom: 14%;
+    width: 590px;
+    z-index: 1;
+  }
+  .people {
+    position: absolute;
+    right: 25px;
+    bottom: 35%;
+    width: 357px;
+  }
+  .about__container {
+    margin: 0 auto;
+    width: 1400px;
+    display: flex;
+    .about__left-block {
+      display: flex;
+      flex-direction: column;
+      width: 894px;
+      border-right: 1px solid #252530;
+
+      .about__title {
+        font-family: "Teko";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 102px;
+        line-height: 102px;
+        text-transform: uppercase;
+        color: #ffffff;
+      }
+      .about__descriptions {
+        display: flex;
+        gap: 42px;
+        padding: 40px 64px 40px 113px;
+        &:nth-child(2) {
+          border-bottom: 1px solid #252530;
+        }
+        img {
+          width: 85px;
+          height: 85px;
+        }
+        .texst {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          p {
+            font-family: "SF UI Display";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #ffffff;
+          }
+        }
+      }
+      .whitepaper {
+        margin: 0 0 0 240px;
+        position: relative;
+        width: 200px;
+        height: 53px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "SF UI Display";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #ffffff;
+        background: linear-gradient(
+          271.14deg,
+          #7732ea 0.99%,
+          #009afe 50.02%,
+          #7732ea 99.04%
+        );
+        border-radius: 4px;
+        background-size: 200% 200%;
+        animation: 3s buttom-bg linear infinite;
+        overflow: hidden;
+        text-decoration: none;
+        z-index: 1;
+        cursor: pointer;
+        &::before {
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          top: 0;
+          left: 0;
+          content: "learn whitepaper";
+          width: 100%;
+          height: 100%;
+          background: #7732ea;
+          border-radius: 4px;
+          opacity: 0;
+          z-index: 0;
+          transition: 0.25s ease-out opacity;
+        }
+        &:hover {
+          &::before {
+            opacity: 1;
+            z-index: 0;
+          }
+        }
+      }
+    }
+    .about__sticker {
+      margin: 0 0 0 65px;
+      padding: 15px 125px 20px 25px;
+      background: #07deda;
+      border-radius: 4px 0px 0px 4px;
+      clip-path: polygon(0% 0%, 80% 0%, 100% 50%, 80% 100%, 0% 100%);
+      height: min-content;
+      display: flex;
+      flex-direction: column;
+      span {
+        font-family: "Teko";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 102px;
+        line-height: 102px;
+        text-transform: uppercase;
+        color: #0b0b0c;
+      }
+      strong {
+        padding: 0 0 0 54px;
+        width: 300px;
+        font-family: "SF UI Display";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #0b0b0c;
+      }
+    }
+  }
+}
+.container-footer {
+  .faq {
+    width: 100%;
+    height: 100vh;
+  }
+  position: relative;
+  .footer-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  .team {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    .team-container {
+      margin: 0 auto;
+      width: 1400px;
+      display: flex;
+      flex-direction: column;
+      .team__title {
+        font-family: "Teko";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 102px;
+        line-height: 102px;
+        text-transform: uppercase;
+        color: #ffffff;
+      }
+      .people__container {
+        margin: 50px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+        .people {
+          width: 358px;
+          position: relative;
+          &:nth-child(2) {
+            margin: 146px 0 0 0;
+          }
+          &:nth-child(3) {
+            margin: -111px 0 0 0;
+          }
+          .inst {
+            width: 38px;
+            height: 38px;
+            border-radius: 100%;
+            position: absolute;
+            left: 30px;
+            top: 0;
+            border: 1px solid #7732ea;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.25s ease-out background;
+            cursor: pointer;
+            text-decoration: none;
+            z-index: 3;
+            svg {
+              width: 17px;
+              height: auto;
+            }
+            &:hover {
+              background: #7732ea;
+            }
+          }
+          .people-circle {
+            position: absolute;
+            right: 10px;
+            top: 88px;
+            .circle {
+              position: relative;
+              width: 198px;
+              z-index: 1;
+            }
+            .car {
+              position: absolute;
+              top: 0;
+              left: 0;
+              border-radius: 100%;
+              width: 172px;
+              transform: translate(6%, 12%);
+            }
+          }
+          .photo {
+            position: relative;
+            width: 260px;
+            z-index: 2;
+          }
+          .name {
+            margin: 0 0 0 40px;
+            font-family: "Teko";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 42px;
+            text-transform: uppercase;
+            color: #ffffff;
+          }
+          .description {
+            margin: 10px 0 0 40px;
+            font-family: "SF UI Display";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #ffffff;
           }
         }
       }

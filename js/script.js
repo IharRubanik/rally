@@ -17,7 +17,11 @@ window.onload = function () {
     roadmap = document.querySelector(".roadmap"),
     slideWrapper = document.querySelector(".slide-wrapper"),
     autoContainer = document.querySelector(".auto__container"),
-    circleSlide = document.querySelectorAll(".circle-slide");
+    circleSlide = document.querySelectorAll(".circle-slide"),
+    acordeonItem = document.querySelectorAll(".acordeon-item"),
+    itemText = document.querySelectorAll(".item-text"),
+    acordeonHeight = 3.698
+
 
   // player
   video.ontimeupdate = progressUpdate;
@@ -92,7 +96,6 @@ window.onload = function () {
       : document.documentElement.scrollTop
       ? document.documentElement.scrollTop
       : document.body.scrollTop;
-    console.log(scrollTop);
     if (scrollTop >= screenHeight / 6) {
       welcomeBg.classList.add("active");
       videoWrapper.classList.add("active");
@@ -267,7 +270,7 @@ window.onload = function () {
     xDown = null;
     yDown = null;
   }
-
+  
   // Function to show a specific slide
   function showSlide(n) {
     let i;
@@ -310,4 +313,33 @@ window.onload = function () {
       slidesText[i - 1].classList.add("noactive");
     }
   }
+
+  showSlide()
+
+  // acordeon
+  if (acordeonItem) {
+    for (let i = 0; i < acordeonItem.length; i++) {
+      acordeonItem[i].addEventListener('click', function (e) {
+        if (acordeonItem[i].classList.contains('active')) {
+          acordeonItem[i].style.height = acordeonHeight + 'vw';
+          acordeonItem[i].classList.remove('active');
+          
+        } else {
+          acordeonItem[i].style.height = itemText[i].scrollHeight  + 'px';
+          acordeonItem[i].classList.add('active');
+          removeAccordion(e.currentTarget);
+        }
+      });
+    }
+    function removeAccordion(item) {
+      for (let i = 0; i < acordeonItem.length; i++) {
+        if (item !== acordeonItem[i]) {
+          acordeonItem[i].classList.remove('active');
+          acordeonItem[i].style.height = acordeonHeight + 'vw';
+        }
+      }
+    }
+  }
+
+
 };

@@ -235,12 +235,6 @@ body::-webkit-scrollbar-thumb {
 .welcome__wrapper .welcome .video__wrapper .control .control-button:hover svg .icon {
   fill: #0b0b0c;
 }
-.welcome__wrapper .welcome .video__wrapper .control .control-button.active {
-  background: #ffffff;
-}
-.welcome__wrapper .welcome .video__wrapper .control .control-button.active svg .icon {
-  fill: #0b0b0c;
-}
 .welcome__wrapper .welcome .video__wrapper .control .pause {
   display: none;
 }
@@ -514,7 +508,6 @@ body::-webkit-scrollbar-thumb {
 }
 .vertical__wrapper .vertical-container .vertical-content .utility .utility__container .utility__slider .slider__button-container {
   display: flex;
-  flex-direction: column;
   gap: 15px;
 }
 .vertical__wrapper .vertical-container .vertical-content .utility .utility__container .utility__slider .slider__button-container .button {
@@ -529,6 +522,7 @@ body::-webkit-scrollbar-thumb {
   transition: 0.25s ease-out background;
 }
 .vertical__wrapper .vertical-container .vertical-content .utility .utility__container .utility__slider .slider__button-container .button .arrow {
+  transform: rotate(-90deg);
   width: 20px;
   height: auto;
 }
@@ -536,7 +530,7 @@ body::-webkit-scrollbar-thumb {
   background: #7732ea;
 }
 .vertical__wrapper .vertical-container .vertical-content .utility .utility__container .utility__slider .slider__button-container .button-next .arrow {
-  transform: rotate(180deg);
+  transform: rotate(90deg);
 }
 .vertical__wrapper .vertical-container .vertical-content .utility .utility__container .utility__slider .slider__text {
   position: absolute;
@@ -550,15 +544,15 @@ body::-webkit-scrollbar-thumb {
   line-height: 32px;
   color: #ffffff;
   opacity: 0;
-  transform: translateY(100%);
+  transform: translateX(300%);
   transition: 0.5s ease-in-out transform, 0.5s ease-in-out opacity;
 }
 .vertical__wrapper .vertical-container .vertical-content .utility .utility__container .utility__slider .slider__text.active {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(0);
 }
 .vertical__wrapper .vertical-container .vertical-content .utility .utility__container .utility__slider .slider__text.noactive {
-  transform: translateY(-200%);
+  transform: translateX(-100%);
 }
 .vertical__wrapper .vertical-container .vertical-content .utility .utility__container .utility__slider .utility__number-container {
   width: 170px;
@@ -632,10 +626,11 @@ body::-webkit-scrollbar-thumb {
 .vertical__wrapper .vertical-container .vertical-content .roadmap .roadmap__continer .roadmap__subtitle {
   font-family: "Teko";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 22px;
   line-height: 22px;
-  color: #0b0b0c;
+  text-transform: uppercase;
+  color: #0B0B0C;
   background: #07deda;
   display: block;
   padding: 0.4% 20px 0 8px;
@@ -1009,32 +1004,38 @@ body::-webkit-scrollbar-thumb {
   color: #0b0b0c;
 }
 
-.container-footer {
+.wrapper-footer {
   position: relative;
 }
-.container-footer .faq {
-  width: 100%;
-  height: 100vh;
-}
-.container-footer .footer-bg {
+.wrapper-footer .footer-bg {
   position: absolute;
   right: 0;
   bottom: 0;
   width: 100%;
 }
-.container-footer .team {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
+.wrapper-footer .car-footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1452px;
+  z-index: 1;
 }
-.container-footer .team .team-container {
+.wrapper-footer .faq {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 2;
+  padding: 8vh 0 0 0;
+}
+.wrapper-footer .faq .faq__container {
   margin: 0 auto;
   width: 1400px;
   display: flex;
   flex-direction: column;
+  gap: 30px;
 }
-.container-footer .team .team-container .team__title {
+.wrapper-footer .faq .faq__container .faq__title {
   font-family: "Teko";
   font-style: normal;
   font-weight: 700;
@@ -1043,22 +1044,122 @@ body::-webkit-scrollbar-thumb {
   text-transform: uppercase;
   color: #ffffff;
 }
-.container-footer .team .team-container .people__container {
+.wrapper-footer .faq .faq__container .faq__acordeon .acordeon-item {
+  display: flex;
+  gap: 106px;
+  height: 70px;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: 0.3s ease-out height;
+  cursor: pointer;
+}
+.wrapper-footer .faq .faq__container .faq__acordeon .acordeon-item .item-circle {
+  margin: 25px 0 0 0;
+  transform: translateY(19%);
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #ffffff;
+  border-radius: 100%;
+  transition: 0.3s ease-out background, 0.3s ease-out border;
+}
+.wrapper-footer .faq .faq__container .faq__acordeon .acordeon-item .item-number {
+  margin: 25px 0 0 0;
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  transition: 0.3s ease-out color;
+}
+.wrapper-footer .faq .faq__container .faq__acordeon .acordeon-item .item-text {
+  padding: 25px 0 25px 230px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.wrapper-footer .faq .faq__container .faq__acordeon .acordeon-item .item-text h3 {
+  font-family: "Teko";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: 0.3s ease-out color;
+}
+.wrapper-footer .faq .faq__container .faq__acordeon .acordeon-item .item-text p {
+  padding: 0 0 25px 0;
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 0;
+  transition: 0.3s ease-out opacity;
+}
+.wrapper-footer .faq .faq__container .faq__acordeon .acordeon-item.active .item-circle {
+  background: #7732ea;
+  border: 1px solid #7732ea;
+}
+.wrapper-footer .faq .faq__container .faq__acordeon .acordeon-item.active .item-number {
+  color: #7732ea;
+}
+.wrapper-footer .faq .faq__container .faq__acordeon .acordeon-item.active .item-text h3 {
+  color: #7732ea;
+}
+.wrapper-footer .faq .faq__container .faq__acordeon .acordeon-item.active .item-text p {
+  opacity: 1;
+}
+.wrapper-footer .faq .faq__container .faq__acordeon .acordeon-item:hover .item-circle {
+  background: #7732ea;
+  border: 1px solid #7732ea;
+}
+.wrapper-footer .faq .faq__container .faq__acordeon .acordeon-item:hover .item-number {
+  color: #7732ea;
+}
+.wrapper-footer .faq .faq__container .faq__acordeon .acordeon-item:hover .item-text h3 {
+  color: #7732ea;
+}
+.wrapper-footer .team {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.wrapper-footer .team .team-container {
+  margin: 0 auto;
+  width: 1400px;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper-footer .team .team-container .team__title {
+  font-family: "Teko";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 102px;
+  line-height: 102px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.wrapper-footer .team .team-container .people__container {
   margin: 50px 0 0 0;
   display: flex;
   justify-content: space-between;
 }
-.container-footer .team .team-container .people__container .people {
+.wrapper-footer .team .team-container .people__container .people {
   width: 358px;
   position: relative;
 }
-.container-footer .team .team-container .people__container .people:nth-child(2) {
+.wrapper-footer .team .team-container .people__container .people:nth-child(2) {
   margin: 146px 0 0 0;
 }
-.container-footer .team .team-container .people__container .people:nth-child(3) {
+.wrapper-footer .team .team-container .people__container .people:nth-child(3) {
   margin: -111px 0 0 0;
 }
-.container-footer .team .team-container .people__container .people .inst {
+.wrapper-footer .team .team-container .people__container .people .inst {
   width: 38px;
   height: 38px;
   border-radius: 100%;
@@ -1074,24 +1175,24 @@ body::-webkit-scrollbar-thumb {
   text-decoration: none;
   z-index: 3;
 }
-.container-footer .team .team-container .people__container .people .inst svg {
+.wrapper-footer .team .team-container .people__container .people .inst svg {
   width: 17px;
   height: auto;
 }
-.container-footer .team .team-container .people__container .people .inst:hover {
+.wrapper-footer .team .team-container .people__container .people .inst:hover {
   background: #7732ea;
 }
-.container-footer .team .team-container .people__container .people .people-circle {
+.wrapper-footer .team .team-container .people__container .people .people-circle {
   position: absolute;
   right: 10px;
   top: 88px;
 }
-.container-footer .team .team-container .people__container .people .people-circle .circle {
+.wrapper-footer .team .team-container .people__container .people .people-circle .circle {
   position: relative;
   width: 198px;
   z-index: 1;
 }
-.container-footer .team .team-container .people__container .people .people-circle .car {
+.wrapper-footer .team .team-container .people__container .people .people-circle .car {
   position: absolute;
   top: 0;
   left: 0;
@@ -1099,12 +1200,12 @@ body::-webkit-scrollbar-thumb {
   width: 172px;
   transform: translate(6%, 12%);
 }
-.container-footer .team .team-container .people__container .people .photo {
+.wrapper-footer .team .team-container .people__container .people .photo {
   position: relative;
   width: 260px;
   z-index: 2;
 }
-.container-footer .team .team-container .people__container .people .name {
+.wrapper-footer .team .team-container .people__container .people .name {
   margin: 0 0 0 40px;
   font-family: "Teko";
   font-style: normal;
@@ -1114,7 +1215,7 @@ body::-webkit-scrollbar-thumb {
   text-transform: uppercase;
   color: #ffffff;
 }
-.container-footer .team .team-container .people__container .people .description {
+.wrapper-footer .team .team-container .people__container .people .description {
   margin: 10px 0 0 40px;
   font-family: "SF UI Display";
   font-style: normal;
@@ -1122,4 +1223,113 @@ body::-webkit-scrollbar-thumb {
   font-size: 16px;
   line-height: 24px;
   color: #ffffff;
+}
+.wrapper-footer .footer {
+  padding: 330px 0 0 0;
+  z-index: 2;
+  position: relative;
+}
+.wrapper-footer .footer .footer__container {
+  position: relative;
+  padding: 0 0 58px 0;
+  margin: 0 auto;
+  width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper-footer .footer .footer__container .register {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 146px;
+  width: 200px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: linear-gradient(271.14deg, #7732ea 0.99%, #009afe 50.02%, #7732ea 99.04%);
+  border-radius: 4px;
+  background-size: 200% 200%;
+  animation: 3s buttom-bg linear infinite;
+  overflow: hidden;
+  text-decoration: none;
+  z-index: 1;
+  cursor: pointer;
+}
+.wrapper-footer .footer .footer__container .register::before {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  content: "whitelist register";
+  width: 100%;
+  height: 100%;
+  background: #7732ea;
+  border-radius: 4px;
+  opacity: 0;
+  z-index: 0;
+  transition: 0.25s ease-out opacity;
+}
+.wrapper-footer .footer .footer__container .register:hover::before {
+  opacity: 1;
+  z-index: 0;
+}
+.wrapper-footer .footer .footer__container .rights {
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.wrapper-footer .footer .footer__container .footer__social {
+  transform: translateX(-37.5%);
+  display: flex;
+  gap: 20px;
+}
+.wrapper-footer .footer .footer__container .footer__social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.082352);
+  transition: 0.25s ease-out background;
+}
+.wrapper-footer .footer .footer__container .footer__social a img {
+  width: 20px;
+  height: auto;
+}
+.wrapper-footer .footer .footer__container .footer__social a:hover {
+  background: #7732ea;
+}
+.wrapper-footer .footer .footer__container strong {
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 99%;
+  color: #4e5465;
+  display: flex;
+  gap: 6px;
+}
+.wrapper-footer .footer .footer__container strong a {
+  text-decoration: none;
+}
+.wrapper-footer .footer .footer__container strong a svg {
+  width: 90px;
+  height: auto;
 }/*# sourceMappingURL=1920.css.map */

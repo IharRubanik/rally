@@ -92,7 +92,7 @@ body::-webkit-scrollbar-thumb {
 }
 .welcome__wrapper .welcome .welcome__top-block {
   position: absolute;
-  top: 6.25vw;
+  top: 8.802vw;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -384,7 +384,7 @@ body::-webkit-scrollbar-thumb {
   gap: 1.667vw;
 }
 .colection .colection__container .colection__galery .colection__descrition span {
-  margin: 1.042vw 0 0 0;
+  margin: 0.885vw 0 0 0;
   display: flex;
   align-items: center;
   padding: 0.156vw 1.042vw 0 0.417vw;

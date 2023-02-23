@@ -14,15 +14,15 @@
 }
 
 body::-webkit-scrollbar {
-  width: 0.521vw;
+  width: 10px;
 }
 body::-webkit-scrollbar-track {
   background-color: #0b0b0c;
   opacity: 0;
 }
 body::-webkit-scrollbar-thumb {
-  box-shadow: inset 0.521vw 0.521vw 0.521vw 0.521vw rgb(7, 222, 218);
-  border-radius: 0.104vw;
+  box-shadow: inset 10px 10px 10px 10px rgb(7, 222, 218);
+  border-radius: 2px;
 }
 
 .wrapper {
@@ -34,9 +34,9 @@ body::-webkit-scrollbar-thumb {
 
 .logo {
   position: fixed;
-  top: 2.083vw;
-  left: 2.604vw;
-  width: 4.167vw;
+  top: 40px;
+  left: 50px;
+  width: 80px;
   height: auto;
   z-index: 10;
 }
@@ -62,20 +62,20 @@ body::-webkit-scrollbar-thumb {
 }
 .welcome__wrapper .welcome .welcome-bg.active {
   transform: rotate(15deg) scale(1.1);
-  filter: blur(0.156vw);
+  filter: blur(3px);
   opacity: 0;
 }
 .welcome__wrapper .welcome .social {
   position: absolute;
-  left: 3.646vw;
-  top: 8.854vw;
+  left: 70px;
+  top: 170px;
   display: flex;
   flex-direction: column;
-  gap: 0.521vw;
+  gap: 10px;
 }
 .welcome__wrapper .welcome .social a {
-  width: 1.979vw;
-  height: 1.979vw;
+  width: 38px;
+  height: 38px;
   border: 1px solid rgba(255, 255, 255, 0.0823529412);
   border-radius: 100%;
   display: flex;
@@ -84,7 +84,7 @@ body::-webkit-scrollbar-thumb {
   transition: 0.25s background ease-out;
 }
 .welcome__wrapper .welcome .social a img {
-  width: 1.042vw;
+  width: 20px;
   height: auto;
 }
 .welcome__wrapper .welcome .social a:hover {
@@ -92,7 +92,7 @@ body::-webkit-scrollbar-thumb {
 }
 .welcome__wrapper .welcome .welcome__top-block {
   position: absolute;
-  top: 6.25vw;
+  top: 120px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -100,35 +100,35 @@ body::-webkit-scrollbar-thumb {
   font-family: "Teko";
   font-style: normal;
   font-weight: 700;
-  font-size: 5.833vw;
-  line-height: 4.792vw;
+  font-size: 112px;
+  line-height: 92px;
   color: #ffffff;
 }
 .welcome__wrapper .welcome .welcome__top-block .welcome__top-block-subtitle {
-  width: 17.292vw;
+  width: 332px;
   font-family: "SF UI Display";
   font-style: normal;
   font-weight: 400;
-  font-size: 0.938vw;
-  line-height: 1.354vw;
+  font-size: 18px;
+  line-height: 26px;
   color: #ffffff;
-  margin: 0 0 0 4.479vw;
+  margin: 0 0 0 86px;
 }
 .welcome__wrapper .welcome .welcome__top-block .welcome__top-block-button {
   position: absolute;
-  margin: 1.563vw 0 0 4.479vw;
-  width: 10.417vw;
-  height: 2.76vw;
+  margin: 30px 0 0 86px;
+  width: 200px;
+  height: 53px;
   background: linear-gradient(271.14deg, #7732ea 0.99%, #009afe 50.02%, #7732ea 99.04%);
-  border-radius: 0.208vw;
+  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "SF UI Display";
   font-style: normal;
   font-weight: 700;
-  font-size: 0.729vw;
-  line-height: 0.885vw;
+  font-size: 14px;
+  line-height: 17px;
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -150,7 +150,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   height: 100%;
   background: #7732ea;
-  border-radius: 0.208vw;
+  border-radius: 4px;
   opacity: 0;
   z-index: 0;
   transition: 0.25s ease-out opacity;
@@ -160,13 +160,13 @@ body::-webkit-scrollbar-thumb {
 }
 .welcome__wrapper .welcome .title {
   position: absolute;
-  left: 2.604vw;
-  bottom: 2.083vw;
+  left: 50px;
+  bottom: 40px;
   font-family: "SF UI Display";
   font-style: normal;
   font-weight: 400;
-  font-size: 3.125vw;
-  line-height: 3.75vw;
+  font-size: 60px;
+  line-height: 72px;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -175,13 +175,13 @@ body::-webkit-scrollbar-thumb {
   font-family: "Teko";
   font-style: normal;
   font-weight: 700;
-  font-size: 8.438vw;
-  line-height: 8.438vw;
+  font-size: 162px;
+  line-height: 162px;
   color: #ffffff;
 }
 .welcome__wrapper .welcome .video__wrapper {
   position: absolute;
-  padding: 1.563vw;
+  padding: 30px;
   top: 0;
   left: 0;
   width: 100%;
@@ -194,7 +194,7 @@ body::-webkit-scrollbar-thumb {
   transform: translateY(0) scale(1);
 }
 .welcome__wrapper .welcome .video__wrapper #video {
-  border-radius: 0.521vw;
+  border-radius: 10px;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -202,15 +202,15 @@ body::-webkit-scrollbar-thumb {
 }
 .welcome__wrapper .welcome .video__wrapper .control {
   position: absolute;
-  bottom: 2.604vw;
-  left: 2.604vw;
+  bottom: 50px;
+  left: 50px;
   display: flex;
   align-items: center;
-  gap: 0.521vw;
+  gap: 10px;
 }
 .welcome__wrapper .welcome .video__wrapper .control .control-button {
-  width: 2.083vw;
-  height: 2.083vw;
+  width: 40px;
+  height: 40px;
   border-radius: 100%;
   border: 1px solid #ffffff;
   background: none;
@@ -222,7 +222,7 @@ body::-webkit-scrollbar-thumb {
   margin: 0;
 }
 .welcome__wrapper .welcome .video__wrapper .control .control-button svg {
-  width: 0.625vw;
+  width: 12px;
   height: auto;
   transition: 0.25s ease-out opacity;
 }
@@ -242,16 +242,16 @@ body::-webkit-scrollbar-thumb {
   display: none;
 }
 .welcome__wrapper .welcome .video__wrapper .control .muted svg {
-  width: 0.99vw;
+  width: 19px;
   height: auto;
 }
 .welcome__wrapper .welcome .video__wrapper .control #progress {
   overflow: hidden;
-  width: 18.854vw;
-  height: 0.26vw;
-  margin: 0 0.26vw;
+  width: 362px;
+  height: 5px;
+  margin: 0 5px;
   accent-color: rgba(255, 0, 0, 0.9);
-  border-radius: 5.208vw;
+  border-radius: 100px;
   cursor: pointer;
 }
 .welcome__wrapper .welcome .video__wrapper .control #progress::-webkit-progress-value {
@@ -261,8 +261,8 @@ body::-webkit-scrollbar-thumb {
   font-family: "SF UI Display";
   font-style: normal;
   font-weight: 600;
-  font-size: 0.833vw;
-  line-height: 0.99vw;
+  font-size: 16px;
+  line-height: 19px;
   color: #ffffff;
 }
 
@@ -274,7 +274,7 @@ body::-webkit-scrollbar-thumb {
 }
 .colection .colection__container {
   margin: 0 auto;
-  width: 72.917vw;
+  width: 1400px;
 }
 .colection .colection__container .colection__top-block {
   display: flex;
@@ -284,33 +284,33 @@ body::-webkit-scrollbar-thumb {
   font-family: "Teko";
   font-style: normal;
   font-weight: 700;
-  font-size: 5.313vw;
-  line-height: 5.313vw;
+  font-size: 102px;
+  line-height: 102px;
   text-transform: uppercase;
   color: #ffffff;
-  width: 33.333vw;
+  width: 640px;
 }
 .colection .colection__container .colection__top-block .colection__subtitle-wrapper {
-  width: 36.198vw;
-  padding: 0.99vw 1.25vw 1.354vw 2.031vw;
+  width: 695px;
+  padding: 19px 24px 26px 39px;
   background-image: url(../img/colection/colection-bg.svg);
   background-size: 100% 100%;
   display: flex;
   flex-direction: column;
-  gap: 0.781vw;
+  gap: 15px;
 }
 .colection .colection__container .colection__top-block .colection__subtitle-wrapper p {
   font-family: "SF UI Display";
   font-style: normal;
   font-weight: 400;
-  font-size: 0.833vw;
-  line-height: 1.25vw;
+  font-size: 16px;
+  line-height: 24px;
   color: #ffffff;
 }
 .colection .colection__container .colection__galery {
   display: flex;
   position: relative;
-  height: 28.177vw;
+  height: 541px;
 }
 .colection .colection__container .colection__galery .colection__galery-container {
   overflow: hidden;
@@ -341,80 +341,80 @@ body::-webkit-scrollbar-thumb {
   z-index: 1;
 }
 .colection .colection__container .colection__galery .container1 {
-  width: 10.417vw;
-  height: 11.198vw;
+  width: 200px;
+  height: 215px;
   left: 0;
-  top: -1.979vw;
+  top: -38px;
 }
 .colection .colection__container .colection__galery .container2 {
-  width: 15.885vw;
-  height: 17.083vw;
-  left: 12.5vw;
-  top: -1.979vw;
+  width: 305px;
+  height: 328px;
+  left: 240px;
+  top: -38px;
 }
 .colection .colection__container .colection__galery .container3 {
-  width: 22.917vw;
-  height: 24.635vw;
-  left: 25vw;
-  top: 1.927vw;
+  width: 440px;
+  height: 473px;
+  left: 480px;
+  top: 37px;
 }
 .colection .colection__container .colection__galery .container4 {
-  width: 14.115vw;
-  height: 15.156vw;
-  left: 50vw;
-  top: 5.781vw;
+  width: 271px;
+  height: 291px;
+  left: 960px;
+  top: 111px;
 }
 .colection .colection__container .colection__galery .container5 {
-  width: 6.615vw;
-  height: 7.135vw;
-  left: 66.302vw;
-  top: 1.927vw;
+  width: 127px;
+  height: 137px;
+  left: 1273px;
+  top: 37px;
 }
 .colection .colection__container .colection__galery .container6 {
-  width: 10.938vw;
-  height: 11.771vw;
-  left: 61.979vw;
-  top: 16.406vw;
+  width: 210px;
+  height: 226px;
+  left: 1190px;
+  top: 315px;
 }
 .colection .colection__container .colection__galery .colection__descrition {
   position: absolute;
   left: 0;
   bottom: 0;
   display: flex;
-  gap: 1.667vw;
+  gap: 32px;
 }
 .colection .colection__container .colection__galery .colection__descrition span {
-  margin: 1.042vw 0 0 0;
+  margin: 20px 0 0 0;
   display: flex;
   align-items: center;
-  padding: 0.156vw 1.042vw 0 0.417vw;
+  padding: 3px 20px 0 8px;
   background: #07deda;
-  border-radius: 0.104vw 0vw 0vw 0.104vw;
+  border-radius: 2px 0px 0px 2px;
   width: auto;
-  height: 1.354vw;
+  height: 26px;
   -webkit-clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
           clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
   font-family: "Teko";
   font-style: normal;
   font-weight: 500;
-  font-size: 1.146vw;
-  line-height: 1.146vw;
+  font-size: 22px;
+  line-height: 22px;
   text-transform: uppercase;
   color: #0b0b0c;
 }
 .colection .colection__container .colection__galery .colection__descrition ul {
-  padding: 1.042vw 0 1.042vw 1.563vw;
-  border-left: 0.052vw solid #252530;
+  padding: 20px 0 20px 30px;
+  border-left: 1px solid #252530;
   display: flex;
   flex-direction: column;
-  gap: 0.781vw;
+  gap: 15px;
 }
 .colection .colection__container .colection__galery .colection__descrition ul li {
   font-family: "Teko";
   font-style: normal;
   font-weight: 500;
-  font-size: 1.146vw;
-  line-height: 1.146vw;
+  font-size: 22px;
+  line-height: 22px;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -466,7 +466,7 @@ body::-webkit-scrollbar-thumb {
 }
 .vertical__wrapper .vertical-container .vertical-content .utility .utility__container {
   margin: 0 auto;
-  width: 72.917vw;
+  width: 1400px;
   z-index: 2;
 }
 .vertical__wrapper .vertical-container .vertical-content .utility .utility__container .utility__title {
@@ -474,45 +474,45 @@ body::-webkit-scrollbar-thumb {
   font-family: "Teko";
   font-style: normal;
   font-weight: 700;
-  font-size: 5.313vw;
-  line-height: 5.313vw;
+  font-size: 102px;
+  line-height: 102px;
   text-transform: uppercase;
   color: #ffffff;
 }
 .vertical__wrapper .vertical-container .vertical-content .utility .utility__container .utility__subtitle {
   display: flex;
   align-items: center;
-  margin: 0.521vw 0 0 0;
-  padding: 0.208vw 1.458vw 0 0.417vw;
-  width: 21.875vw;
+  margin: 10px 0 0 0;
+  padding: 4px 28px 0 8px;
+  width: 420px;
   background: #07deda;
-  border-radius: 0.104vw 0vw 0vw 0.104vw;
+  border-radius: 2px 0px 0px 2px;
   height: auto;
   -webkit-clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
           clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
   font-family: "Teko";
   font-style: normal;
   font-weight: 500;
-  font-size: 1.146vw;
-  line-height: 1.146vw;
+  font-size: 22px;
+  line-height: 22px;
   text-transform: uppercase;
   color: #0b0b0c;
 }
 .vertical__wrapper .vertical-container .vertical-content .utility .utility__container .utility__slider {
   position: relative;
-  margin: 4.271vw 0 0 0;
+  margin: 82px 0 0 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 20.573vw;
+  gap: 395px;
 }
 .vertical__wrapper .vertical-container .vertical-content .utility .utility__container .utility__slider .slider__button-container {
   display: flex;
-  gap: 0.781vw;
+  gap: 15px;
 }
 .vertical__wrapper .vertical-container .vertical-content .utility .utility__container .utility__slider .slider__button-container .button {
-  width: 3.125vw;
-  height: 3.125vw;
+  width: 60px;
+  height: 60px;
   border-radius: 100%;
   display: flex;
   align-items: center;
@@ -523,7 +523,7 @@ body::-webkit-scrollbar-thumb {
 }
 .vertical__wrapper .vertical-container .vertical-content .utility .utility__container .utility__slider .slider__button-container .button .arrow {
   transform: rotate(-90deg);
-  width: 1.042vw;
+  width: 20px;
   height: auto;
 }
 .vertical__wrapper .vertical-container .vertical-content .utility .utility__container .utility__slider .slider__button-container .button:hover {
@@ -534,14 +534,14 @@ body::-webkit-scrollbar-thumb {
 }
 .vertical__wrapper .vertical-container .vertical-content .utility .utility__container .utility__slider .slider__text {
   position: absolute;
-  width: 35.938vw;
+  width: 690px;
   left: 0;
-  bottom: 7.031vw;
+  bottom: 135px;
   font-family: "SF UI Display";
   font-style: normal;
   font-weight: 500;
-  font-size: 1.146vw;
-  line-height: 1.667vw;
+  font-size: 22px;
+  line-height: 32px;
   color: #ffffff;
   opacity: 0;
   transform: translateX(300%);
@@ -555,7 +555,7 @@ body::-webkit-scrollbar-thumb {
   transform: translateX(-100%);
 }
 .vertical__wrapper .vertical-container .vertical-content .utility .utility__container .utility__slider .utility__number-container {
-  width: 8.854vw;
+  width: 170px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -564,8 +564,8 @@ body::-webkit-scrollbar-thumb {
   font-family: "Teko";
   font-style: normal;
   font-weight: 500;
-  font-size: 5.313vw;
-  line-height: 4.01vw;
+  font-size: 102px;
+  line-height: 77px;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -573,8 +573,8 @@ body::-webkit-scrollbar-thumb {
   font-family: "Teko";
   font-style: normal;
   font-weight: 500;
-  font-size: 2.708vw;
-  line-height: 2.708vw;
+  font-size: 52px;
+  line-height: 52px;
   text-transform: uppercase;
   color: #ffffff;
   opacity: 0.1;
@@ -610,7 +610,7 @@ body::-webkit-scrollbar-thumb {
 .vertical__wrapper .vertical-container .vertical-content .roadmap .roadmap__continer {
   display: flex;
   flex-direction: column;
-  gap: 1.042vw;
+  gap: 20px;
   transform: translateY(102%);
   transition: 0.75s ease-in-out transform;
 }
@@ -618,8 +618,8 @@ body::-webkit-scrollbar-thumb {
   font-family: "Teko";
   font-style: normal;
   font-weight: 700;
-  font-size: 12.604vw;
-  line-height: 12.604vw;
+  font-size: 242px;
+  line-height: 242px;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -627,28 +627,28 @@ body::-webkit-scrollbar-thumb {
   font-family: "Teko";
   font-style: normal;
   font-weight: 500;
-  font-size: 1.146vw;
-  line-height: 1.146vw;
+  font-size: 22px;
+  line-height: 22px;
   text-transform: uppercase;
   color: #0B0B0C;
   background: #07deda;
   display: block;
-  padding: 0.4% 1.042vw 0 0.417vw;
-  border-radius: 0.104vw 0vw 0vw 0.104vw;
+  padding: 0.4% 20px 0 8px;
+  border-radius: 2px 0px 0px 2px;
   width: -moz-max-content;
   width: max-content;
   -webkit-clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
           clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
-  transform: translateX(-330%);
+  transform: translateX(-280%);
   transition: 0.75s ease-in-out 0.05s transform;
 }
 .vertical__wrapper .vertical-container .vertical-content .roadmap .roadmap__continer .roadmap__description {
-  width: 22.917vw;
+  width: 440px;
   font-family: "SF UI Display";
   font-style: normal;
   font-weight: 400;
-  font-size: 0.833vw;
-  line-height: 1.25vw;
+  font-size: 16px;
+  line-height: 24px;
   color: #ffffff;
   transform: translateX(-215%);
   transition: 0.75s ease-in-out 0.1s transform;
@@ -681,7 +681,7 @@ body::-webkit-scrollbar-thumb {
 }
 .road .road__container {
   margin: 0 auto;
-  width: 72.917vw;
+  width: 1400px;
   height: 100vh;
   position: sticky;
   left: 0;
@@ -722,8 +722,8 @@ body::-webkit-scrollbar-thumb {
 .road .road__container .slide-wrapper .road-slide {
   height: 100vh;
   display: flex;
-  gap: 5.573vw;
-  padding: 13.802vw 0 0 0;
+  gap: 107px;
+  padding: 265px 0 0 0;
 }
 .road .road__container .slide-wrapper .road-slide.right {
   justify-content: end;
@@ -741,22 +741,22 @@ body::-webkit-scrollbar-thumb {
   text-align: end;
 }
 .road .road__container .slide-wrapper .road-slide.right .right-block .checker {
-  margin: 2.083vw 0 0 auto;
+  margin: 40px 0 0 auto;
 }
 .road .road__container .slide-wrapper .road-slide .left-block {
   display: flex;
   flex-direction: column;
 }
 .road .road__container .slide-wrapper .road-slide .left-block .date {
-  width: 10.417vw;
+  width: 200px;
   font-family: "Teko";
   font-style: normal;
   font-weight: 700;
-  font-size: 5.313vw;
-  line-height: 5.313vw;
+  font-size: 102px;
+  line-height: 102px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0);
-  -webkit-text-stroke: 0.104vw rgb(255, 255, 255);
+  -webkit-text-stroke: 2px rgb(255, 255, 255);
   position: relative;
 }
 .road .road__container .slide-wrapper .road-slide .left-block .date::after {
@@ -768,31 +768,31 @@ body::-webkit-scrollbar-thumb {
   display: block;
   background: #c5c5c5;
   mix-blend-mode: color-dodge;
-  width: 1.146vw;
-  height: 0.104vw;
+  width: 22px;
+  height: 2px;
 }
 .road .road__container .slide-wrapper .road-slide .left-block strong {
   font-family: "Teko";
   font-style: normal;
   font-weight: 500;
-  font-size: 5.313vw;
-  line-height: 5.313vw;
+  font-size: 102px;
+  line-height: 102px;
   text-transform: uppercase;
   color: #ffffff;
 }
 .road .road__container .slide-wrapper .road-slide .right-block {
   display: flex;
   flex-direction: column;
-  gap: 1.042vw;
-  width: 17.188vw;
-  padding: 1.302vw 0 0 0;
+  gap: 20px;
+  width: 330px;
+  padding: 25px 0 0 0;
 }
 .road .road__container .slide-wrapper .road-slide .right-block .title {
   font-family: "Teko";
   font-style: normal;
   font-weight: 500;
-  font-size: 2.083vw;
-  line-height: 2.188vw;
+  font-size: 40px;
+  line-height: 42px;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -800,13 +800,13 @@ body::-webkit-scrollbar-thumb {
   font-family: "SF UI Display";
   font-style: normal;
   font-weight: 400;
-  font-size: 0.833vw;
-  line-height: 1.25vw;
+  font-size: 16px;
+  line-height: 24px;
   color: #ffffff;
 }
 .road .road__container .slide-wrapper .road-slide .right-block .checker {
-  margin: 2.083vw 0 0 0;
-  width: 5.521vw;
+  margin: 40px 0 0 0;
+  width: 106px;
 }
 .road .road__container .auto__wrapper {
   position: absolute;
@@ -816,7 +816,7 @@ body::-webkit-scrollbar-thumb {
 }
 .road .road__container .auto__wrapper .auto__container {
   position: relative;
-  width: 30.625vw;
+  width: 588px;
   margin: 0 auto;
   transition: 1.5s ease-in-out transform;
 }
@@ -841,7 +841,7 @@ body::-webkit-scrollbar-thumb {
   transition: 1.5s ease-in-out transform;
 }
 .road .road__container .auto__wrapper .auto__container .auto-circle .circle {
-  width: 12.656vw;
+  width: 243px;
   z-index: 2;
   position: relative;
 }
@@ -849,12 +849,12 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   top: 0;
   left: 0;
-  width: 10.885vw;
+  width: 209px;
   transform: translate(6%, 12%);
   opacity: 0;
   transition: 1.5s ease-in-out opacity;
   border-radius: 100%;
-  box-shadow: 0vw 0vw 5.208vw 2.448vw rgba(0, 0, 0, 0.74);
+  box-shadow: 0px 0px 100px 47px rgba(0, 0, 0, 0.74);
 }
 .road .road__container .auto__wrapper .auto__container .auto-circle .circle-slide.active {
   opacity: 1;
@@ -870,81 +870,81 @@ body::-webkit-scrollbar-thumb {
 }
 .about .car {
   position: absolute;
-  right: 3.229vw;
+  right: 62px;
   bottom: 14%;
-  width: 30.729vw;
+  width: 590px;
   z-index: 1;
 }
 .about .people {
   position: absolute;
-  right: 1.302vw;
+  right: 25px;
   bottom: 35%;
-  width: 18.594vw;
+  width: 357px;
 }
 .about .about__container {
   margin: 0 auto;
-  width: 72.917vw;
+  width: 1400px;
   display: flex;
 }
 .about .about__container .about__left-block {
   display: flex;
   flex-direction: column;
-  width: 46.563vw;
-  border-right: 0.052vw solid #252530;
+  width: 894px;
+  border-right: 1px solid #252530;
 }
 .about .about__container .about__left-block .about__title {
   font-family: "Teko";
   font-style: normal;
   font-weight: 700;
-  font-size: 5.313vw;
-  line-height: 5.313vw;
+  font-size: 102px;
+  line-height: 102px;
   text-transform: uppercase;
   color: #ffffff;
 }
 .about .about__container .about__left-block .about__descriptions {
   display: flex;
-  gap: 2.344vw;
-  padding: 2.083vw 3.333vw 2.083vw 0;
+  gap: 45px;
+  padding: 40px 64px 40px 0;
 }
 .about .about__container .about__left-block .about__descriptions:nth-child(2) {
-  border-bottom: 0.052vw solid #252530;
+  border-bottom: 1px solid #252530;
 }
 .about .about__container .about__left-block .about__descriptions img {
-  width: 4.427vw;
-  height: 4.427vw;
+  width: 85px;
+  height: 85px;
 }
 .about .about__container .about__left-block .about__descriptions .texst {
   display: flex;
   flex-direction: column;
-  gap: 0.521vw;
+  gap: 10px;
 }
 .about .about__container .about__left-block .about__descriptions .texst p {
   font-family: "SF UI Display";
   font-style: normal;
   font-weight: 400;
-  font-size: 0.833vw;
-  line-height: 1.25vw;
+  font-size: 16px;
+  line-height: 24px;
   color: #ffffff;
 }
 .about .about__container .about__left-block .whitepaper {
-  margin: 0 0 0 6.823vw;
+  margin: 0 0 0 131px;
   position: relative;
-  width: 10.417vw;
-  height: 2.76vw;
+  width: 200px;
+  height: 53px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "SF UI Display";
   font-style: normal;
   font-weight: 700;
-  font-size: 0.729vw;
-  line-height: 0.885vw;
+  font-size: 14px;
+  line-height: 17px;
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
   background: linear-gradient(271.14deg, #7732ea 0.99%, #009afe 50.02%, #7732ea 99.04%);
-  border-radius: 0.208vw;
+  border-radius: 4px;
   background-size: 200% 200%;
   animation: 3s buttom-bg linear infinite;
   overflow: hidden;
@@ -963,7 +963,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   height: 100%;
   background: #7732ea;
-  border-radius: 0.208vw;
+  border-radius: 4px;
   opacity: 0;
   z-index: 0;
   transition: 0.25s ease-out opacity;
@@ -973,10 +973,10 @@ body::-webkit-scrollbar-thumb {
   z-index: 0;
 }
 .about .about__container .about__sticker {
-  margin: 0 0 0 3.385vw;
-  padding: 0.781vw 6.51vw 1.042vw 1.302vw;
+  margin: 0 0 0 65px;
+  padding: 15px 125px 20px 25px;
   background: #07deda;
-  border-radius: 0.208vw 0vw 0vw 0.208vw;
+  border-radius: 4px 0px 0px 4px;
   -webkit-clip-path: polygon(0% 0%, 80% 0%, 100% 50%, 80% 100%, 0% 100%);
           clip-path: polygon(0% 0%, 80% 0%, 100% 50%, 80% 100%, 0% 100%);
   height: -moz-min-content;
@@ -988,19 +988,19 @@ body::-webkit-scrollbar-thumb {
   font-family: "Teko";
   font-style: normal;
   font-weight: 500;
-  font-size: 5.313vw;
-  line-height: 5.313vw;
+  font-size: 102px;
+  line-height: 102px;
   text-transform: uppercase;
   color: #0b0b0c;
 }
 .about .about__container .about__sticker strong {
-  padding: 0 0 0 2.813vw;
-  width: 15.625vw;
+  padding: 0 0 0 54px;
+  width: 300px;
   font-family: "SF UI Display";
   font-style: normal;
   font-weight: 400;
-  font-size: 0.833vw;
-  line-height: 1.25vw;
+  font-size: 16px;
+  line-height: 24px;
   color: #0b0b0c;
 }
 
@@ -1018,7 +1018,7 @@ body::-webkit-scrollbar-thumb {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 75.625vw;
+  width: 1452px;
   z-index: 1;
 }
 .wrapper-footer .faq {
@@ -1030,72 +1030,72 @@ body::-webkit-scrollbar-thumb {
 }
 .wrapper-footer .faq .faq__container {
   margin: 0 auto;
-  width: 72.917vw;
+  width: 1400px;
   display: flex;
   flex-direction: column;
-  gap: 1.563vw;
+  gap: 30px;
 }
 .wrapper-footer .faq .faq__container .faq__title {
   font-family: "Teko";
   font-style: normal;
   font-weight: 700;
-  font-size: 5.313vw;
-  line-height: 5.313vw;
+  font-size: 102px;
+  line-height: 102px;
   text-transform: uppercase;
   color: #ffffff;
 }
 .wrapper-footer .faq .faq__container .faq__acordeon .acordeon-item {
   display: flex;
-  gap: 5.521vw;
-  height: 3.646vw;
+  gap: 106px;
+  height: 70px;
   overflow: hidden;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   transition: 0.3s ease-out height;
   cursor: pointer;
 }
 .wrapper-footer .faq .faq__container .faq__acordeon .acordeon-item .item-circle {
-  margin: 1.302vw 0 0 0;
+  margin: 25px 0 0 0;
   transform: translateY(19%);
   flex-shrink: 0;
-  width: 0.729vw;
-  height: 0.729vw;
+  width: 14px;
+  height: 14px;
   border: 1px solid #ffffff;
   border-radius: 100%;
   transition: 0.3s ease-out background, 0.3s ease-out border;
 }
 .wrapper-footer .faq .faq__container .faq__acordeon .acordeon-item .item-number {
-  margin: 1.302vw 0 0 0;
+  margin: 25px 0 0 0;
   font-family: "SF UI Display";
   font-style: normal;
   font-weight: 400;
-  font-size: 0.833vw;
-  line-height: 1.25vw;
+  font-size: 16px;
+  line-height: 24px;
   color: #ffffff;
   transition: 0.3s ease-out color;
 }
 .wrapper-footer .faq .faq__container .faq__acordeon .acordeon-item .item-text {
-  padding: 1.302vw 0 1.302vw 11.979vw;
+  padding: 25px 0 25px 230px;
   display: flex;
   flex-direction: column;
-  gap: 0.729vw;
+  gap: 14px;
 }
 .wrapper-footer .faq .faq__container .faq__acordeon .acordeon-item .item-text h3 {
   font-family: "Teko";
   font-style: normal;
   font-weight: 500;
-  font-size: 1.146vw;
-  line-height: 1.146vw;
+  font-size: 22px;
+  line-height: 22px;
   text-transform: uppercase;
   color: #ffffff;
   transition: 0.3s ease-out color;
 }
 .wrapper-footer .faq .faq__container .faq__acordeon .acordeon-item .item-text p {
-  padding: 0 0 1.302vw 0;
+  padding: 0 0 25px 0;
   font-family: "SF UI Display";
   font-style: normal;
   font-weight: 400;
-  font-size: 0.833vw;
-  line-height: 1.25vw;
+  font-size: 16px;
+  line-height: 24px;
   color: #ffffff;
   opacity: 0;
   transition: 0.3s ease-out opacity;
@@ -1131,7 +1131,7 @@ body::-webkit-scrollbar-thumb {
 }
 .wrapper-footer .team .team-container {
   margin: 0 auto;
-  width: 72.917vw;
+  width: 1400px;
   display: flex;
   flex-direction: column;
 }
@@ -1139,32 +1139,32 @@ body::-webkit-scrollbar-thumb {
   font-family: "Teko";
   font-style: normal;
   font-weight: 700;
-  font-size: 5.313vw;
-  line-height: 5.313vw;
+  font-size: 102px;
+  line-height: 102px;
   text-transform: uppercase;
   color: #ffffff;
 }
 .wrapper-footer .team .team-container .people__container {
-  margin: 2.604vw 0 0 0;
+  margin: 50px 0 0 0;
   display: flex;
   justify-content: space-between;
 }
 .wrapper-footer .team .team-container .people__container .people {
-  width: 18.646vw;
+  width: 358px;
   position: relative;
 }
 .wrapper-footer .team .team-container .people__container .people:nth-child(2) {
-  margin: 7.604vw 0 0 0;
+  margin: 146px 0 0 0;
 }
 .wrapper-footer .team .team-container .people__container .people:nth-child(3) {
-  margin: -5.781vw 0 0 0;
+  margin: -111px 0 0 0;
 }
 .wrapper-footer .team .team-container .people__container .people .inst {
-  width: 1.979vw;
-  height: 1.979vw;
+  width: 38px;
+  height: 38px;
   border-radius: 100%;
   position: absolute;
-  left: 1.563vw;
+  left: 30px;
   top: 0;
   border: 1px solid #7732ea;
   display: flex;
@@ -1176,7 +1176,7 @@ body::-webkit-scrollbar-thumb {
   z-index: 3;
 }
 .wrapper-footer .team .team-container .people__container .people .inst svg {
-  width: 1.042vw;
+  width: 20px;
   height: auto;
 }
 .wrapper-footer .team .team-container .people__container .people .inst:hover {
@@ -1184,12 +1184,12 @@ body::-webkit-scrollbar-thumb {
 }
 .wrapper-footer .team .team-container .people__container .people .people-circle {
   position: absolute;
-  right: 0.521vw;
-  top: 4.583vw;
+  right: 10px;
+  top: 88px;
 }
 .wrapper-footer .team .team-container .people__container .people .people-circle .circle {
   position: relative;
-  width: 10.313vw;
+  width: 198px;
   z-index: 1;
 }
 .wrapper-footer .team .team-container .people__container .people .people-circle .car {
@@ -1197,43 +1197,43 @@ body::-webkit-scrollbar-thumb {
   top: 0;
   left: 0;
   border-radius: 100%;
-  width: 8.958vw;
+  width: 172px;
   transform: translate(6%, 12%);
 }
 .wrapper-footer .team .team-container .people__container .people .photo {
   position: relative;
-  width: 13.542vw;
+  width: 260px;
   z-index: 2;
 }
 .wrapper-footer .team .team-container .people__container .people .name {
-  margin: 0 0 0 2.083vw;
+  margin: 0 0 0 40px;
   font-family: "Teko";
   font-style: normal;
   font-weight: 500;
-  font-size: 2.083vw;
-  line-height: 2.188vw;
+  font-size: 40px;
+  line-height: 42px;
   text-transform: uppercase;
   color: #ffffff;
 }
 .wrapper-footer .team .team-container .people__container .people .description {
-  margin: 0.521vw 0 0 2.083vw;
+  margin: 10px 0 0 40px;
   font-family: "SF UI Display";
   font-style: normal;
   font-weight: 400;
-  font-size: 0.833vw;
-  line-height: 1.25vw;
+  font-size: 16px;
+  line-height: 24px;
   color: #ffffff;
 }
 .wrapper-footer .footer {
-  padding: 22.708vw 0 0 0;
+  padding: 436px 0 0 0;
   z-index: 2;
   position: relative;
 }
 .wrapper-footer .footer .footer__container {
   position: relative;
-  padding: 0 0 3.021vw 0;
+  padding: 0 0 58px 0;
   margin: 0 auto;
-  width: 72.917vw;
+  width: 1400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1242,23 +1242,23 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 7.604vw;
-  width: 10.417vw;
-  height: 2.76vw;
+  bottom: 146px;
+  width: 200px;
+  height: 53px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "SF UI Display";
   font-style: normal;
   font-weight: 700;
-  font-size: 0.729vw;
-  line-height: 0.885vw;
+  font-size: 14px;
+  line-height: 17px;
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
   background: linear-gradient(271.14deg, #7732ea 0.99%, #009afe 50.02%, #7732ea 99.04%);
-  border-radius: 0.208vw;
+  border-radius: 4px;
   background-size: 200% 200%;
   animation: 3s buttom-bg linear infinite;
   overflow: hidden;
@@ -1277,7 +1277,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   height: 100%;
   background: #7732ea;
-  border-radius: 0.208vw;
+  border-radius: 4px;
   opacity: 0;
   z-index: 0;
   transition: 0.25s ease-out opacity;
@@ -1290,27 +1290,27 @@ body::-webkit-scrollbar-thumb {
   font-family: "SF UI Display";
   font-style: normal;
   font-weight: 400;
-  font-size: 0.833vw;
-  line-height: 1.25vw;
+  font-size: 16px;
+  line-height: 24px;
   color: #ffffff;
 }
 .wrapper-footer .footer .footer__container .footer__social {
   transform: translateX(-37.5%);
   display: flex;
-  gap: 1.042vw;
+  gap: 20px;
 }
 .wrapper-footer .footer .footer__container .footer__social a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1.979vw;
-  height: 1.979vw;
+  width: 38px;
+  height: 38px;
   border-radius: 100%;
   border: 1px solid rgba(255, 255, 255, 0.082352);
   transition: 0.25s ease-out background;
 }
 .wrapper-footer .footer .footer__container .footer__social a img {
-  width: 1.042vw;
+  width: 20px;
   height: auto;
 }
 .wrapper-footer .footer .footer__container .footer__social a:hover {
@@ -1320,17 +1320,17 @@ body::-webkit-scrollbar-thumb {
   font-family: "SF UI Display";
   font-style: normal;
   font-weight: 400;
-  font-size: 0.729vw;
+  font-size: 14px;
   line-height: 99%;
   color: #4e5465;
   display: flex;
-  gap: 0.313vw;
+  gap: 6px;
 }
 .wrapper-footer .footer .footer__container strong a {
   text-decoration: none;
 }
 .wrapper-footer .footer .footer__container strong a svg {
-  width: 4.688vw;
+  width: 90px;
   height: auto;
 }
 .wrapper-footer .footer .footer__container strong a svg path {
@@ -1338,4 +1338,4 @@ body::-webkit-scrollbar-thumb {
 }
 .wrapper-footer .footer .footer__container strong a:hover svg path {
   fill: #7732EA;
-}/*# sourceMappingURL=1920.css.map */
+}/*# sourceMappingURL=1024.css.map */

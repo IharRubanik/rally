@@ -291,7 +291,7 @@ window.onload = function () {
       slidesText[i].classList.remove("noactive");
 
       if (slides.length <= 9) {
-        lastNumber.innerHTML = "/0" + slides.length;
+        lastNumber.innerHTML = "/ 0" + slides.length;
       } else {
         lastNumber.innerHTML = "/" + slides.length;
       }

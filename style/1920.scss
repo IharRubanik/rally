@@ -14,15 +14,15 @@
 }
 body {
   &::-webkit-scrollbar {
-    width: 10px;
+    width: 0.521vw;
   }
   &::-webkit-scrollbar-track {
     background-color: #0b0b0c;
     opacity: 0;
   }
   &::-webkit-scrollbar-thumb {
-    box-shadow: inset 10px 10px 10px 10px rgb(7, 222, 218);
-    border-radius: 2px;
+    box-shadow: inset 0.521vw 0.521vw 0.521vw 0.521vw rgb(7, 222, 218);
+    border-radius: 0.104vw;
   }
 }
 .wrapper {
@@ -33,9 +33,9 @@ body {
 }
 .logo {
   position: fixed;
-  top: 40px;
-  left: 50px;
-  width: 80px;
+  top: 2.083vw;
+  left: 2.604vw;
+  width: 4.167vw;
   height: auto;
   z-index: 10;
 }
@@ -57,21 +57,21 @@ body {
         0.7s opacity 0.3s ease-in-out;
       &.active {
         transform: rotate(15deg) scale(1.1);
-        filter: blur(3px);
+        filter: blur(0.156vw);
         opacity: 0;
       }
     }
 
     .social {
       position: absolute;
-      left: 50px;
-      bottom: 326px;
+      left: 3.646vw;
+      top: 8.854vw;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 0.521vw;
       a {
-        width: 38px;
-        height: 38px;
+        width: 1.979vw;
+        height: 1.979vw;
         border: 1px solid #ffffff15;
         border-radius: 100%;
         display: flex;
@@ -79,7 +79,7 @@ body {
         justify-content: center;
         transition: 0.25s background ease-out;
         img {
-          width: 20px;
+          width: 1.042vw;
           height: auto;
         }
         &:hover {
@@ -89,47 +89,47 @@ body {
     }
     .welcome__top-block {
       position: absolute;
-      top: 120px;
+      top: 6.25vw;
       left: 50%;
       transform: translateX(-50%);
       .welcome__top-block-title {
         font-family: "Teko";
         font-style: normal;
         font-weight: 700;
-        font-size: 112px;
-        line-height: 92px;
+        font-size: 5.833vw;
+        line-height: 4.792vw;
         color: #ffffff;
       }
       .welcome__top-block-subtitle {
-        width: 332px;
+        width: 17.292vw;
         font-family: "SF UI Display";
         font-style: normal;
         font-weight: 400;
-        font-size: 18px;
-        line-height: 26px;
+        font-size: 0.938vw;
+        line-height: 1.354vw;
         color: #ffffff;
-        margin: 0 0 0 86px;
+        margin: 0 0 0 4.479vw;
       }
       .welcome__top-block-button {
         position: absolute;
-        margin: 30px 0 0 86px;
-        width: 200px;
-        height: 53px;
+        margin: 1.563vw 0 0 4.479vw;
+        width: 10.417vw;
+        height: 2.76vw;
         background: linear-gradient(
           271.14deg,
           #7732ea 0.99%,
           #009afe 50.02%,
           #7732ea 99.04%
         );
-        border-radius: 4px;
+        border-radius: 0.208vw;
         display: flex;
         align-items: center;
         justify-content: center;
         font-family: "SF UI Display";
         font-style: normal;
         font-weight: 700;
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 0.729vw;
+        line-height: 0.885vw;
         text-align: center;
         letter-spacing: 0.05em;
         text-transform: uppercase;
@@ -150,7 +150,7 @@ body {
           width: 100%;
           height: 100%;
           background: #7732ea;
-          border-radius: 4px;
+          border-radius: 0.208vw;
           opacity: 0;
           z-index: 0;
           transition: 0.25s ease-out opacity;
@@ -164,13 +164,13 @@ body {
     }
     .title {
       position: absolute;
-      left: 50px;
-      bottom: 40px;
+      left: 2.604vw;
+      bottom: 2.083vw;
       font-family: "SF UI Display";
       font-style: normal;
       font-weight: 400;
-      font-size: 60px;
-      line-height: 72px;
+      font-size: 3.125vw;
+      line-height: 3.75vw;
       color: #ffffff;
       display: flex;
       flex-direction: column;
@@ -178,14 +178,14 @@ body {
         font-family: "Teko";
         font-style: normal;
         font-weight: 700;
-        font-size: 162px;
-        line-height: 162px;
+        font-size: 8.438vw;
+        line-height: 8.438vw;
         color: #ffffff;
       }
     }
     .video__wrapper {
       position: absolute;
-      padding: 30px;
+      padding: 1.563vw;
       top: 0;
       left: 0;
       width: 100%;
@@ -197,21 +197,21 @@ body {
         transform: translateY(0) scale(1);
       }
       #video {
-        border-radius: 10px;
+        border-radius: 0.521vw;
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
       .control {
         position: absolute;
-        bottom: 50px;
-        left: 50px;
+        bottom: 2.604vw;
+        left: 2.604vw;
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 0.521vw;
         .control-button {
-          width: 40px;
-          height: 40px;
+          width: 2.083vw;
+          height: 2.083vw;
           border-radius: 100%;
           border: 1px solid #ffffff;
           background: none;
@@ -222,7 +222,7 @@ body {
           padding: 0;
           margin: 0;
           svg {
-            width: 12px;
+            width: 0.625vw;
             height: auto;
             transition: 0.25s ease-out opacity;
             .icon {
@@ -247,17 +247,17 @@ body {
         }
         .muted {
           svg {
-            width: 19px;
+            width: 0.99vw;
             height: auto;
           }
         }
         #progress {
           overflow: hidden;
-          width: 362px;
-          height: 5px;
-          margin: 0 5px;
+          width: 18.854vw;
+          height: 0.26vw;
+          margin: 0 0.26vw;
           accent-color: rgb(255, 0, 0, 90%);
-          border-radius: 100px;
+          border-radius: 5.208vw;
           cursor: pointer;
           &::-webkit-progress-value {
             background: #009afe;
@@ -267,8 +267,8 @@ body {
           font-family: "SF UI Display";
           font-style: normal;
           font-weight: 600;
-          font-size: 16px;
-          line-height: 19px;
+          font-size: 0.833vw;
+          line-height: 0.99vw;
           color: #ffffff;
         }
       }
@@ -282,7 +282,7 @@ body {
   align-items: center;
   .colection__container {
     margin: 0 auto;
-    width: 1400px;
+    width: 72.917vw;
     .colection__top-block {
       display: flex;
       justify-content: space-between;
@@ -290,26 +290,26 @@ body {
         font-family: "Teko";
         font-style: normal;
         font-weight: 700;
-        font-size: 102px;
-        line-height: 102px;
+        font-size: 5.313vw;
+        line-height: 5.313vw;
         text-transform: uppercase;
         color: #ffffff;
-        width: 640px;
+        width: 33.333vw;
       }
       .colection__subtitle-wrapper {
-        width: 695px;
-        padding: 19px 24px 26px 39px;
+        width: 36.198vw;
+        padding: 0.99vw 1.25vw 1.354vw 2.031vw;
         background-image: url(../img/colection/colection-bg.svg);
         background-size: 100% 100%;
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 0.781vw;
         p {
           font-family: "SF UI Display";
           font-style: normal;
           font-weight: 400;
-          font-size: 16px;
-          line-height: 24px;
+          font-size: 0.833vw;
+          line-height: 1.25vw;
           color: #ffffff;
         }
       }
@@ -317,7 +317,7 @@ body {
     .colection__galery {
       display: flex;
       position: relative;
-      height: 541px;
+      height: 28.177vw;
       .colection__galery-container {
         overflow: hidden;
         position: absolute;
@@ -347,85 +347,85 @@ body {
         }
       }
       .container1 {
-        width: 200px;
-        height: 215px;
+        width: 10.417vw;
+        height: 11.198vw;
 
         left: 0;
-        top: -38px;
+        top: -1.979vw;
       }
       .container2 {
-        width: 305px;
-        height: 328px;
+        width: 15.885vw;
+        height: 17.083vw;
 
-        left: 240px;
-        top: -38px;
+        left: 12.5vw;
+        top: -1.979vw;
       }
       .container3 {
-        width: 440px;
-        height: 473px;
+        width: 22.917vw;
+        height: 24.635vw;
 
-        left: 480px;
-        top: 37px;
+        left: 25vw;
+        top: 1.927vw;
       }
       .container4 {
-        width: 271px;
-        height: 291px;
+        width: 14.115vw;
+        height: 15.156vw;
 
-        left: 960px;
-        top: 111px;
+        left: 50vw;
+        top: 5.781vw;
       }
       .container5 {
-        width: 127px;
-        height: 137px;
+        width: 6.615vw;
+        height: 7.135vw;
 
-        left: 1273px;
-        top: 37px;
+        left: 66.302vw;
+        top: 1.927vw;
       }
       .container6 {
-        width: 210px;
-        height: 226px;
+        width: 10.938vw;
+        height: 11.771vw;
 
-        left: 1190px;
-        top: 315px;
+        left: 61.979vw;
+        top: 16.406vw;
       }
       .colection__descrition {
         position: absolute;
         left: 0;
         bottom: 0;
         display: flex;
-        gap: 32px;
+        gap: 1.667vw;
 
         span {
-          margin: 20px 0 0 0;
+          margin: 1.042vw 0 0 0;
           display: flex;
           align-items: center;
-          padding: 3px 20px 0 8px;
+          padding: 0.156vw 1.042vw 0 0.417vw;
           background: #07deda;
-          border-radius: 2px 0px 0px 2px;
+          border-radius: 0.104vw 0vw 0vw 0.104vw;
           width: auto;
-          height: 26px;
+          height: 1.354vw;
           clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
           font-family: "Teko";
           font-style: normal;
           font-weight: 500;
-          font-size: 22px;
-          line-height: 22px;
+          font-size: 1.146vw;
+          line-height: 1.146vw;
           text-transform: uppercase;
 
           color: #0b0b0c;
         }
         ul {
-          padding: 20px 0 20px 30px;
-          border-left: 1px solid #252530;
+          padding: 1.042vw 0 1.042vw 1.563vw;
+          border-left: 0.052vw solid #252530;
           display: flex;
           flex-direction: column;
-          gap: 15px;
+          gap: 0.781vw;
           li {
             font-family: "Teko";
             font-style: normal;
             font-weight: 500;
-            font-size: 22px;
-            line-height: 22px;
+            font-size: 1.146vw;
+            line-height: 1.146vw;
             text-transform: uppercase;
             color: #ffffff;
           }
@@ -476,49 +476,49 @@ body {
         }
         .utility__container {
           margin: 0 auto;
-          width: 1400px;
+          width: 72.917vw;
           z-index: 2;
           .utility__title {
             position: relative;
             font-family: "Teko";
             font-style: normal;
             font-weight: 700;
-            font-size: 102px;
-            line-height: 102px;
+            font-size: 5.313vw;
+            line-height: 5.313vw;
             text-transform: uppercase;
             color: #ffffff;
           }
           .utility__subtitle {
             display: flex;
             align-items: center;
-            margin: 10px 0 0 0;
-            padding: 4px 28px 0 8px;
-            width: 420px;
+            margin: 0.521vw 0 0 0;
+            padding: 0.208vw 1.458vw 0 0.417vw;
+            width: 21.875vw;
             background: #07deda;
-            border-radius: 2px 0px 0px 2px;
+            border-radius: 0.104vw 0vw 0vw 0.104vw;
             height: auto;
             clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
             font-family: "Teko";
             font-style: normal;
             font-weight: 500;
-            font-size: 22px;
-            line-height: 22px;
+            font-size: 1.146vw;
+            line-height: 1.146vw;
             text-transform: uppercase;
             color: #0b0b0c;
           }
           .utility__slider {
             position: relative;
-            margin: 45px 0 0 0;
+            margin: 4.271vw 0 0 0;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            gap: 343px;
+            gap: 20.573vw;
             .slider__button-container {
               display: flex;
-              gap: 15px;
+              gap: 0.781vw;
               .button {
-                width: 60px;
-                height: 60px;
+                width: 3.125vw;
+                height: 3.125vw;
                 border-radius: 100%;
                 display: flex;
                 align-items: center;
@@ -528,7 +528,7 @@ body {
                 transition: 0.25s ease-out background;
                 .arrow {
                   transform: rotate(-90deg);
-                  width: 20px;
+                  width: 1.042vw;
                   height: auto;
                 }
                 &:hover {
@@ -543,14 +543,14 @@ body {
             }
             .slider__text {
               position: absolute;
-              width: 690px;
+              width: 35.938vw;
               left: 0;
-              bottom: 135px;
+              bottom: 7.031vw;
               font-family: "SF UI Display";
               font-style: normal;
               font-weight: 500;
-              font-size: 22px;
-              line-height: 32px;
+              font-size: 1.146vw;
+              line-height: 1.667vw;
               color: #ffffff;
               opacity: 0;
               transform: translateX(300%);
@@ -564,7 +564,7 @@ body {
               }
             }
             .utility__number-container {
-              width: 170px;
+              width: 8.854vw;
               display: flex;
               justify-content: space-between;
               align-items: flex-end;
@@ -572,8 +572,8 @@ body {
                 font-family: "Teko";
                 font-style: normal;
                 font-weight: 500;
-                font-size: 102px;
-                line-height: 77px;
+                font-size: 5.313vw;
+                line-height: 4.01vw;
                 text-transform: uppercase;
                 color: #ffffff;
               }
@@ -581,8 +581,8 @@ body {
                 font-family: "Teko";
                 font-style: normal;
                 font-weight: 500;
-                font-size: 52px;
-                line-height: 52px;
+                font-size: 2.708vw;
+                line-height: 2.708vw;
                 text-transform: uppercase;
                 color: #ffffff;
                 opacity: 0.1;
@@ -620,15 +620,15 @@ body {
         .roadmap__continer {
           display: flex;
           flex-direction: column;
-          gap: 20px;
+          gap: 1.042vw;
           transform: translateY(102%);
           transition: 0.75s ease-in-out transform;
           .roadmap__title {
             font-family: "Teko";
             font-style: normal;
             font-weight: 700;
-            font-size: 242px;
-            line-height: 242px;
+            font-size: 12.604vw;
+            line-height: 12.604vw;
             text-transform: uppercase;
             color: #ffffff;
           }
@@ -636,26 +636,26 @@ body {
             font-family: 'Teko';
             font-style: normal;
             font-weight: 500;
-            font-size: 22px;
-            line-height: 22px;
+            font-size: 1.146vw;
+            line-height: 1.146vw;
             text-transform: uppercase;
             color: #0B0B0C;
             background: #07deda;
             display: block;
-            padding: 0.4% 20px 0 8px;
-            border-radius: 2px 0px 0px 2px;
+            padding: 0.4% 1.042vw 0 0.417vw;
+            border-radius: 0.104vw 0vw 0vw 0.104vw;
             width: max-content;
             clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
-            transform: translateX(-280%);
+            transform: translateX(-330%);
             transition: 0.75s ease-in-out 0.05s transform;
           }
           .roadmap__description {
-            width: 440px;
+            width: 22.917vw;
             font-family: "SF UI Display";
             font-style: normal;
             font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 0.833vw;
+            line-height: 1.25vw;
             color: #ffffff;
             transform: translateX(-215%);
             transition: 0.75s ease-in-out 0.1s transform;
@@ -668,7 +668,7 @@ body {
               transform: translateY(0);
             }
             .roadmap__subtitle {
-              transform: translateX(222%);
+              transform: translateX(307%);
             }
           }
         }
@@ -676,7 +676,7 @@ body {
           .roadmap__continer {
             transform: translateY(-35%);
             .roadmap__subtitle {
-              transform: translateX(222%);
+              transform: translateX(307%);
             }
             .roadmap__description {
               transform: translateX(0%);
@@ -695,7 +695,7 @@ body {
   height: 850vh;
   .road__container {
     margin: 0 auto;
-    width: 1400px;
+    width: 72.917vw;
     height: 100vh;
     position: sticky;
     left: 0;
@@ -734,8 +734,8 @@ body {
       .road-slide {
         height: 100vh;
         display: flex;
-        gap: 107px;
-        padding: 265px 0 0 0;
+        gap: 5.573vw;
+        padding: 13.802vw 0 0 0;
         &.right {
           justify-content: end;
           flex-direction: row-reverse;
@@ -754,7 +754,7 @@ body {
               text-align: end;
             }
             .checker {
-              margin: 40px 0 0 auto;
+              margin: 2.083vw 0 0 auto;
             }
           }
         }
@@ -762,15 +762,15 @@ body {
           display: flex;
           flex-direction: column;
           .date {
-            width: 200px;
+            width: 10.417vw;
             font-family: "Teko";
             font-style: normal;
             font-weight: 700;
-            font-size: 102px;
-            line-height: 102px;
+            font-size: 5.313vw;
+            line-height: 5.313vw;
             text-transform: uppercase;
             color: rgba(255, 255, 255, 0);
-            -webkit-text-stroke: 2px rgb(255, 255, 255);
+            -webkit-text-stroke: 0.104vw rgb(255, 255, 255);
             position: relative;
             &::after {
               position: absolute;
@@ -781,16 +781,16 @@ body {
               display: block;
               background: #c5c5c5;
               mix-blend-mode: color-dodge;
-              width: 22px;
-              height: 2px;
+              width: 1.146vw;
+              height: 0.104vw;
             }
           }
           strong {
             font-family: "Teko";
             font-style: normal;
             font-weight: 500;
-            font-size: 102px;
-            line-height: 102px;
+            font-size: 5.313vw;
+            line-height: 5.313vw;
             text-transform: uppercase;
             color: #ffffff;
           }
@@ -798,15 +798,15 @@ body {
         .right-block {
           display: flex;
           flex-direction: column;
-          gap: 20px;
-          width: 330px;
-          padding: 25px 0 0 0;
+          gap: 1.042vw;
+          width: 17.188vw;
+          padding: 1.302vw 0 0 0;
           .title {
             font-family: "Teko";
             font-style: normal;
             font-weight: 500;
-            font-size: 40px;
-            line-height: 42px;
+            font-size: 2.083vw;
+            line-height: 2.188vw;
             text-transform: uppercase;
             color: #ffffff;
           }
@@ -814,13 +814,13 @@ body {
             font-family: "SF UI Display";
             font-style: normal;
             font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 0.833vw;
+            line-height: 1.25vw;
             color: #ffffff;
           }
           .checker {
-            margin: 40px 0 0 0;
-            width: 106px;
+            margin: 2.083vw 0 0 0;
+            width: 5.521vw;
           }
         }
       }
@@ -832,7 +832,7 @@ body {
       width: 100%;
       .auto__container {
         position: relative;
-        width: 588px;
+        width: 30.625vw;
         margin: 0 auto;
         transition: 1.5s ease-in-out transform;
         &.right {
@@ -855,7 +855,7 @@ body {
           transform: translateX(-107%);
           transition: 1.5s ease-in-out transform;
           .circle {
-            width: 243px;
+            width: 12.656vw;
             z-index: 2;
             position: relative;
           }
@@ -863,14 +863,14 @@ body {
             position: absolute;
             top: 0;
             left: 0;
-            width: 209px;
+            width: 10.885vw;
             transform: translate(6%, 12%);
             opacity: 0;
             transition: 1.5s ease-in-out opacity;
             border-radius: 100%;
-            -webkit-box-shadow: 0px 0px 100px 47px rgba(0, 0, 0, 0.74);
-            -moz-box-shadow: 0px 0px 100px 47px rgba(0, 0, 0, 0.74);
-            box-shadow: 0px 0px 100px 47px rgba(0, 0, 0, 0.74);
+            -webkit-box-shadow: 0vw 0vw 5.208vw 2.448vw rgba(0, 0, 0, 0.74);
+            -moz-box-shadow: 0vw 0vw 5.208vw 2.448vw rgba(0, 0, 0, 0.74);
+            box-shadow: 0vw 0vw 5.208vw 2.448vw rgba(0, 0, 0, 0.74);
             &.active {
               opacity: 1;
             }
@@ -889,74 +889,74 @@ body {
   justify-content: center;
   .car {
     position: absolute;
-    right: 62px;
+    right: 3.229vw;
     bottom: 14%;
-    width: 590px;
+    width: 30.729vw;
     z-index: 1;
   }
   .people {
     position: absolute;
-    right: 25px;
+    right: 1.302vw;
     bottom: 35%;
-    width: 357px;
+    width: 18.594vw;
   }
   .about__container {
     margin: 0 auto;
-    width: 1400px;
+    width: 72.917vw;
     display: flex;
     .about__left-block {
       display: flex;
       flex-direction: column;
-      width: 894px;
-      border-right: 1px solid #252530;
+      width: 46.563vw;
+      border-right: 0.052vw solid #252530;
 
       .about__title {
         font-family: "Teko";
         font-style: normal;
         font-weight: 700;
-        font-size: 102px;
-        line-height: 102px;
+        font-size: 5.313vw;
+        line-height: 5.313vw;
         text-transform: uppercase;
         color: #ffffff;
       }
       .about__descriptions {
         display: flex;
-        gap: 42px;
-        padding: 40px 64px 40px 113px;
+        gap: 2.344vw;
+        padding: 2.083vw 3.333vw 2.083vw 0;
         &:nth-child(2) {
-          border-bottom: 1px solid #252530;
+          border-bottom: 0.052vw solid #252530;
         }
         img {
-          width: 85px;
-          height: 85px;
+          width: 4.427vw;
+          height: 4.427vw;
         }
         .texst {
           display: flex;
           flex-direction: column;
-          gap: 10px;
+          gap: 0.521vw;
           p {
             font-family: "SF UI Display";
             font-style: normal;
             font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 0.833vw;
+            line-height: 1.25vw;
             color: #ffffff;
           }
         }
       }
       .whitepaper {
-        margin: 0 0 0 240px;
+        margin: 0 0 0 6.823vw;
         position: relative;
-        width: 200px;
-        height: 53px;
+        width: 10.417vw;
+        height: 2.76vw;
         display: flex;
         align-items: center;
         justify-content: center;
         font-family: "SF UI Display";
         font-style: normal;
         font-weight: 700;
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 0.729vw;
+        line-height: 0.885vw;
         text-align: center;
         letter-spacing: 0.05em;
         text-transform: uppercase;
@@ -967,7 +967,7 @@ body {
           #009afe 50.02%,
           #7732ea 99.04%
         );
-        border-radius: 4px;
+        border-radius: 0.208vw;
         background-size: 200% 200%;
         animation: 3s buttom-bg linear infinite;
         overflow: hidden;
@@ -985,7 +985,7 @@ body {
           width: 100%;
           height: 100%;
           background: #7732ea;
-          border-radius: 4px;
+          border-radius: 0.208vw;
           opacity: 0;
           z-index: 0;
           transition: 0.25s ease-out opacity;
@@ -999,10 +999,10 @@ body {
       }
     }
     .about__sticker {
-      margin: 0 0 0 65px;
-      padding: 15px 125px 20px 25px;
+      margin: 0 0 0 3.385vw;
+      padding: 0.781vw 6.51vw 1.042vw 1.302vw;
       background: #07deda;
-      border-radius: 4px 0px 0px 4px;
+      border-radius: 0.208vw 0vw 0vw 0.208vw;
       clip-path: polygon(0% 0%, 80% 0%, 100% 50%, 80% 100%, 0% 100%);
       height: min-content;
       display: flex;
@@ -1011,19 +1011,19 @@ body {
         font-family: "Teko";
         font-style: normal;
         font-weight: 500;
-        font-size: 102px;
-        line-height: 102px;
+        font-size: 5.313vw;
+        line-height: 5.313vw;
         text-transform: uppercase;
         color: #0b0b0c;
       }
       strong {
-        padding: 0 0 0 54px;
-        width: 300px;
+        padding: 0 0 0 2.813vw;
+        width: 15.625vw;
         font-family: "SF UI Display";
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 0.833vw;
+        line-height: 1.25vw;
         color: #0b0b0c;
       }
     }
@@ -1042,7 +1042,7 @@ body {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 1452px;
+    width: 75.625vw;
     z-index: 1;
   }
   .faq {
@@ -1053,70 +1053,70 @@ body {
     padding: 8vh 0 0 0;
     .faq__container {
       margin: 0 auto;
-      width: 1400px;
+      width: 72.917vw;
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 1.563vw;
       .faq__title {
         font-family: "Teko";
         font-style: normal;
         font-weight: 700;
-        font-size: 102px;
-        line-height: 102px;
+        font-size: 5.313vw;
+        line-height: 5.313vw;
         text-transform: uppercase;
         color: #ffffff;
       }
       .faq__acordeon {
         .acordeon-item {
           display: flex;
-          gap: 106px;
-          height: 70px;
+          gap: 5.521vw;
+          height: 3.646vw;
           overflow: hidden;
           border-bottom: 1px solid rgba(255, 255, 255, 0.1);
           transition: 0.3s ease-out height;
           cursor: pointer;
           .item-circle {
-            margin: 25px 0 0 0;
+            margin: 1.302vw 0 0 0;
             transform: translateY(19%);
             flex-shrink: 0;
-            width: 14px;
-            height: 14px;
+            width: 0.729vw;
+            height: 0.729vw;
             border: 1px solid #ffffff;
             border-radius: 100%;
             transition: 0.3s ease-out background, 0.3s ease-out border;
           }
           .item-number {
-            margin: 25px 0 0 0;
+            margin: 1.302vw 0 0 0;
             font-family: "SF UI Display";
             font-style: normal;
             font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 0.833vw;
+            line-height: 1.25vw;
             color: #ffffff;
             transition: 0.3s ease-out color;
           }
           .item-text {
-            padding: 25px 0 25px 230px;
+            padding: 1.302vw 0 1.302vw 11.979vw;
             display: flex;
             flex-direction: column;
-            gap: 14px;
+            gap: 0.729vw;
             h3 {
               font-family: "Teko";
               font-style: normal;
               font-weight: 500;
-              font-size: 22px;
-              line-height: 22px;
+              font-size: 1.146vw;
+              line-height: 1.146vw;
               text-transform: uppercase;
               color: #ffffff;
               transition: 0.3s ease-out color;
             }
             p {
-              padding: 0 0 25px 0;
+              padding: 0 0 1.302vw 0;
               font-family: "SF UI Display";
               font-style: normal;
               font-weight: 400;
-              font-size: 16px;
-              line-height: 24px;
+              font-size: 0.833vw;
+              line-height: 1.25vw;
               color: #ffffff;
               opacity: 0;
               transition: 0.3s ease-out opacity;
@@ -1164,37 +1164,37 @@ body {
     align-items: center;
     .team-container {
       margin: 0 auto;
-      width: 1400px;
+      width: 72.917vw;
       display: flex;
       flex-direction: column;
       .team__title {
         font-family: "Teko";
         font-style: normal;
         font-weight: 700;
-        font-size: 102px;
-        line-height: 102px;
+        font-size: 5.313vw;
+        line-height: 5.313vw;
         text-transform: uppercase;
         color: #ffffff;
       }
       .people__container {
-        margin: 50px 0 0 0;
+        margin: 2.604vw 0 0 0;
         display: flex;
         justify-content: space-between;
         .people {
-          width: 358px;
+          width: 18.646vw;
           position: relative;
           &:nth-child(2) {
-            margin: 146px 0 0 0;
+            margin: 7.604vw 0 0 0;
           }
           &:nth-child(3) {
-            margin: -111px 0 0 0;
+            margin: -5.781vw 0 0 0;
           }
           .inst {
-            width: 38px;
-            height: 38px;
+            width: 1.979vw;
+            height: 1.979vw;
             border-radius: 100%;
             position: absolute;
-            left: 30px;
+            left: 1.563vw;
             top: 0;
             border: 1px solid #7732ea;
             display: flex;
@@ -1205,7 +1205,7 @@ body {
             text-decoration: none;
             z-index: 3;
             svg {
-              width: 17px;
+              width: 1.042vw;
               height: auto;
             }
             &:hover {
@@ -1214,11 +1214,11 @@ body {
           }
           .people-circle {
             position: absolute;
-            right: 10px;
-            top: 88px;
+            right: 0.521vw;
+            top: 4.583vw;
             .circle {
               position: relative;
-              width: 198px;
+              width: 10.313vw;
               z-index: 1;
             }
             .car {
@@ -1226,32 +1226,32 @@ body {
               top: 0;
               left: 0;
               border-radius: 100%;
-              width: 172px;
+              width: 8.958vw;
               transform: translate(6%, 12%);
             }
           }
           .photo {
             position: relative;
-            width: 260px;
+            width: 13.542vw;
             z-index: 2;
           }
           .name {
-            margin: 0 0 0 40px;
+            margin: 0 0 0 2.083vw;
             font-family: "Teko";
             font-style: normal;
             font-weight: 500;
-            font-size: 40px;
-            line-height: 42px;
+            font-size: 2.083vw;
+            line-height: 2.188vw;
             text-transform: uppercase;
             color: #ffffff;
           }
           .description {
-            margin: 10px 0 0 40px;
+            margin: 0.521vw 0 0 2.083vw;
             font-family: "SF UI Display";
             font-style: normal;
             font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 0.833vw;
+            line-height: 1.25vw;
             color: #ffffff;
           }
         }
@@ -1259,14 +1259,14 @@ body {
     }
   }
   .footer {
-    padding: 330px 0 0 0;
+    padding: 22.708vw 0 0 0;
     z-index: 2;
     position: relative;
     .footer__container {
       position: relative;
-      padding: 0 0 58px 0;
+      padding: 0 0 3.021vw 0;
       margin: 0 auto;
-      width: 1400px;
+      width: 72.917vw;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -1274,18 +1274,18 @@ body {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        bottom: 146px;
+        bottom: 7.604vw;
 
-        width: 200px;
-        height: 53px;
+        width: 10.417vw;
+        height: 2.76vw;
         display: flex;
         align-items: center;
         justify-content: center;
         font-family: "SF UI Display";
         font-style: normal;
         font-weight: 700;
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 0.729vw;
+        line-height: 0.885vw;
         text-align: center;
         letter-spacing: 0.05em;
         text-transform: uppercase;
@@ -1296,7 +1296,7 @@ body {
           #009afe 50.02%,
           #7732ea 99.04%
         );
-        border-radius: 4px;
+        border-radius: 0.208vw;
         background-size: 200% 200%;
         animation: 3s buttom-bg linear infinite;
         overflow: hidden;
@@ -1314,7 +1314,7 @@ body {
           width: 100%;
           height: 100%;
           background: #7732ea;
-          border-radius: 4px;
+          border-radius: 0.208vw;
           opacity: 0;
           z-index: 0;
           transition: 0.25s ease-out opacity;
@@ -1330,25 +1330,25 @@ body {
         font-family: "SF UI Display";
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 0.833vw;
+        line-height: 1.25vw;
         color: #ffffff;
       }
       .footer__social {
         transform: translateX(-37.5%);
         display: flex;
-        gap: 20px;
+        gap: 1.042vw;
         a {
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 38px;
-          height: 38px;
+          width: 1.979vw;
+          height: 1.979vw;
           border-radius: 100%;
           border: 1px solid rgba(255, 255, 255, 0.082352);
           transition: 0.25s ease-out background;
           img {
-            width: 20px;
+            width: 1.042vw;
             height: auto;
           }
           &:hover {
@@ -1361,16 +1361,27 @@ body {
         font-family: "SF UI Display";
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 0.729vw;
         line-height: 99%;
         color: #4e5465;
         display: flex;
-        gap: 6px;
+        gap: 0.313vw;
         a {
           text-decoration: none;
           svg {
-            width: 90px;
+            width: 4.688vw;
             height: auto;
+            path{
+              transition: 0.25s ease-out fill;
+            }
+          }
+          &:hover{
+            svg{
+              path{
+                fill: #7732EA ;
+              }
+             
+            }
           }
         }
       }

@@ -630,7 +630,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 1.146vw;
   line-height: 1.146vw;
   text-transform: uppercase;
-  color: #0B0B0C;
+  color: #0b0b0c;
   background: #07deda;
   display: block;
   padding: 0.4% 1.042vw 0 0.417vw;
@@ -1337,5 +1337,5 @@ body::-webkit-scrollbar-thumb {
   transition: 0.25s ease-out fill;
 }
 .wrapper-footer .footer .footer__container strong a:hover svg path {
-  fill: #7732EA;
+  fill: #7732ea;
 }/*# sourceMappingURL=1920.css.map */

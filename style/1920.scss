@@ -237,7 +237,6 @@ body {
               }
             }
           }
-
         }
         .pause {
           display: none;
@@ -633,13 +632,13 @@ body {
             color: #ffffff;
           }
           .roadmap__subtitle {
-            font-family: 'Teko';
+            font-family: "Teko";
             font-style: normal;
             font-weight: 500;
             font-size: 1.146vw;
             line-height: 1.146vw;
             text-transform: uppercase;
-            color: #0B0B0C;
+            color: #0b0b0c;
             background: #07deda;
             display: block;
             padding: 0.4% 1.042vw 0 0.417vw;
@@ -1371,16 +1370,15 @@ body {
           svg {
             width: 4.688vw;
             height: auto;
-            path{
+            path {
               transition: 0.25s ease-out fill;
             }
           }
-          &:hover{
-            svg{
-              path{
-                fill: #7732EA ;
+          &:hover {
+            svg {
+              path {
+                fill: #7732ea;
               }
-             
             }
           }
         }

@@ -1,5 +1,6 @@
 window.onload = function () {
-  let video = document.querySelector("#video"),
+  let screenHeight = window.screen.height,
+    video = document.querySelector("#video"),
     muted = document.querySelector(".muted"),
     playPause = document.querySelector(".play-pause"),
     play = document.querySelector(".play"),
@@ -20,8 +21,11 @@ window.onload = function () {
     circleSlide = document.querySelectorAll(".circle-slide"),
     acordeonItem = document.querySelectorAll(".acordeon-item"),
     itemText = document.querySelectorAll(".item-text"),
-    acordeonHeight = 3.698
-
+    acordeonHeight = 3.698;
+  // resize
+  window.addEventListener("resize", function () {
+    screenHeight = window.screen.height;
+  });
 
   // player
   video.ontimeupdate = progressUpdate;
@@ -89,7 +93,7 @@ window.onload = function () {
   let flag = false;
 
   // scroll
-  const screenHeight = window.screen.height;
+
   window.onscroll = function () {
     var scrollTop = window.pageYOffset
       ? window.pageYOffset
@@ -132,53 +136,53 @@ window.onload = function () {
     if (scrollTop >= screenHeight * 5.5) {
       slideWrapper.classList.add("one");
       autoContainer.classList.replace("right", "left");
-      addClacc(1)
+      addClacc(1);
     } else {
       slideWrapper.classList.remove("one");
       autoContainer.classList.replace("left", "right");
-      addClacc(0)
+      addClacc(0);
     }
     if (scrollTop >= screenHeight * 6.5) {
       slideWrapper.classList.add("two");
       autoContainer.classList.replace("left", "right");
-      addClacc(2)
+      addClacc(2);
     } else {
       slideWrapper.classList.remove("two");
     }
     if (scrollTop >= screenHeight * 7.5) {
       slideWrapper.classList.add("three");
       autoContainer.classList.replace("right", "left");
-      addClacc(3)
+      addClacc(3);
     } else {
       slideWrapper.classList.remove("three");
     }
     if (scrollTop >= screenHeight * 8.5) {
       slideWrapper.classList.add("four");
       autoContainer.classList.replace("left", "right");
-      addClacc(4)
+      addClacc(4);
     } else {
       slideWrapper.classList.remove("four");
     }
     if (scrollTop >= screenHeight * 9.5) {
       slideWrapper.classList.add("five");
       autoContainer.classList.replace("right", "left");
-      addClacc(5)
+      addClacc(5);
     } else {
       slideWrapper.classList.remove("five");
     }
     if (scrollTop >= screenHeight * 10.5) {
       slideWrapper.classList.add("six");
       autoContainer.classList.replace("left", "right");
-      addClacc(6)
+      addClacc(6);
     } else {
       slideWrapper.classList.remove("six");
     }
   };
   function addClacc(slide) {
     for (let i = 0; i < circleSlide.length; i++) {
-      circleSlide[i].classList.remove('active')
+      circleSlide[i].classList.remove("active");
     }
-    circleSlide[slide].classList.add('active')
+    circleSlide[slide].classList.add("active");
   }
 
   //   colection-slide
@@ -270,7 +274,7 @@ window.onload = function () {
     xDown = null;
     yDown = null;
   }
-  
+
   // Function to show a specific slide
   function showSlide(n) {
     let i;
@@ -314,19 +318,18 @@ window.onload = function () {
     }
   }
 
-  showSlide()
+  showSlide();
 
   // acordeon
   if (acordeonItem) {
     for (let i = 0; i < acordeonItem.length; i++) {
-      acordeonItem[i].addEventListener('click', function (e) {
-        if (acordeonItem[i].classList.contains('active')) {
-          acordeonItem[i].style.height = acordeonHeight + 'vw';
-          acordeonItem[i].classList.remove('active');
-          
+      acordeonItem[i].addEventListener("click", function (e) {
+        if (acordeonItem[i].classList.contains("active")) {
+          acordeonItem[i].style.height = acordeonHeight + "vw";
+          acordeonItem[i].classList.remove("active");
         } else {
-          acordeonItem[i].style.height = itemText[i].scrollHeight  + 'px';
-          acordeonItem[i].classList.add('active');
+          acordeonItem[i].style.height = itemText[i].scrollHeight + "px";
+          acordeonItem[i].classList.add("active");
           removeAccordion(e.currentTarget);
         }
       });
@@ -334,12 +337,10 @@ window.onload = function () {
     function removeAccordion(item) {
       for (let i = 0; i < acordeonItem.length; i++) {
         if (item !== acordeonItem[i]) {
-          acordeonItem[i].classList.remove('active');
-          acordeonItem[i].style.height = acordeonHeight + 'vw';
+          acordeonItem[i].classList.remove("active");
+          acordeonItem[i].style.height = acordeonHeight + "vw";
         }
       }
     }
   }
-
-
 };

@@ -420,7 +420,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .vertical__wrapper {
-  height: 300vh;
+  height: 400vh;
 }
 .vertical__wrapper .vertical-container {
   position: sticky;
@@ -677,7 +677,7 @@ body::-webkit-scrollbar-thumb {
   transition: 0.75s ease-in-out margin;
   margin: -30vh 0 0 0;
   position: relative;
-  height: 850vh;
+  height: 800vh;
 }
 .road .road__container {
   margin: 0 auto;

@@ -21,13 +21,37 @@ window.onload = function () {
     circleSlide = document.querySelectorAll(".circle-slide"),
     acordeonItem = document.querySelectorAll(".acordeon-item"),
     itemText = document.querySelectorAll(".item-text"),
+    a = 3.5,
+    b = 4,
+    c = 4.5,
+    d = 6.5,
+    f = 7.5,
+    g = 8.5,
+    h = 9.5,
+    k = 10.5,
+    l = 11.5,
     acordeonHeight = 3.698;
-    const mediaQuery1024 = window.matchMedia("only screen and (max-width: 1280px)")
+    const mediaQuery1024 = window.matchMedia("only screen and (max-width: 1280px)"),
+    mediaQuery768 = window.matchMedia("only screen and (max-width: 860px)")
 
 
 if(mediaQuery1024.matches) {
   acordeonHeight = 6.25;
 }
+if(mediaQuery768.matches) {
+  a = 2.5
+    b = 3
+    c = 3.5
+    d = 5
+    f = 6
+    g = 7
+    h = 8
+    k = 9
+    l = 10
+}
+
+
+
   // resize
   window.addEventListener("resize", function () {
     screenHeight = window.screen.height;
@@ -122,24 +146,29 @@ if(mediaQuery1024.matches) {
       welcomeBg.classList.remove("active");
       videoWrapper.classList.remove("active");
     }
-
-    if (scrollTop >= screenHeight * 3.5) {
+    if (scrollTop >= screenHeight * a) {
       verticalContent.classList.add("step-one");
     } else {
       verticalContent.classList.remove("step-one");
     }
-    if (scrollTop >= screenHeight * 4) {
+
+
+
+    if (scrollTop >= screenHeight * b) {
       roadmap.classList.add("step-one");
     } else {
       roadmap.classList.remove("step-one");
     }
-    if (scrollTop >= screenHeight * 4.5) {
+    if (scrollTop >= screenHeight * c) {
       roadmap.classList.add("step-two");
       roadmap.classList.remove("step-one");
     } else {
       roadmap.classList.remove("step-two");
     }
-    if (scrollTop >= screenHeight * 6.5) {
+
+
+
+    if (scrollTop >= screenHeight * d) {
       slideWrapper.classList.add("one");
       autoContainer.classList.replace("right", "left");
       addClacc(1);
@@ -148,35 +177,35 @@ if(mediaQuery1024.matches) {
       autoContainer.classList.replace("left", "right");
       addClacc(0);
     }
-    if (scrollTop >= screenHeight * 7.5) {
+    if (scrollTop >= screenHeight * f) {
       slideWrapper.classList.add("two");
       autoContainer.classList.replace("left", "right");
       addClacc(2);
     } else {
       slideWrapper.classList.remove("two");
     }
-    if (scrollTop >= screenHeight * 8.5) {
+    if (scrollTop >= screenHeight * g) {
       slideWrapper.classList.add("three");
       autoContainer.classList.replace("right", "left");
       addClacc(3);
     } else {
       slideWrapper.classList.remove("three");
     }
-    if (scrollTop >= screenHeight * 9.5) {
+    if (scrollTop >= screenHeight * h) {
       slideWrapper.classList.add("four");
       autoContainer.classList.replace("left", "right");
       addClacc(4);
     } else {
       slideWrapper.classList.remove("four");
     }
-    if (scrollTop >= screenHeight * 10.5) {
+    if (scrollTop >= screenHeight * k) {
       slideWrapper.classList.add("five");
       autoContainer.classList.replace("right", "left");
       addClacc(5);
     } else {
       slideWrapper.classList.remove("five");
     }
-    if (scrollTop >= screenHeight * 11.5) {
+    if (scrollTop >= screenHeight * l) {
       slideWrapper.classList.add("six");
       autoContainer.classList.replace("left", "right");
       addClacc(6);

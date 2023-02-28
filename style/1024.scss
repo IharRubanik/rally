@@ -1,9 +1,9 @@
 @media only screen and (max-width: 1280px) {
   .logo {
     position: absolute;
-    top: 20px;
-    left: 30px;
-    width: 64px;
+    top: 1.953vw;
+    left: 2.93vw;
+    width: 6.25vw;
     height: auto;
   }
   .welcome__wrapper {
@@ -14,75 +14,75 @@
         height: auto;
         width: 120%;
         &.active {
-          filter: blur(3px);
+          filter: blur(0.293vw);
         }
       }
       .social {
         position: absolute;
-        left: 45px;
-        top: 124px;
-        gap: 10px;
+        left: 4.395vw;
+        top: 12.109vw;
+        gap: 0.977vw;
         a {
-          width: 34px;
-          height: 34px;
+          width: 3.32vw;
+          height: 3.32vw;
           border: 1px solid #ffffff15;
           img {
-            width: 18px;
+            width: 1.758vw;
           }
         }
       }
       .welcome__top-block {
-        top: 122px;
-        left: 474px;
+        top: 11.914vw;
+        left: 46.289vw;
         transform: translateX(0);
         .welcome__top-block-title {
-          font-size: 68px;
-          line-height: 58px;
+          font-size: 6.641vw;
+          line-height: 5.664vw;
         }
         .welcome__top-block-subtitle {
-          width: 300px;
-          font-size: 15px;
-          line-height: 20px;
-          margin: 0 0 0 52px;
+          width: 29.297vw;
+          font-size: 1.465vw;
+          line-height: 1.953vw;
+          margin: 0 0 0 5.078vw;
         }
         .welcome__top-block-button {
-          margin: 20px 0 0 52px;
-          width: 165px;
-          height: 44px;
-          border-radius: 3px;
-          font-size: 12px;
-          line-height: 14px;
+          margin: 1.953vw 0 0 5.078vw;
+          width: 16.113vw;
+          height: 4.297vw;
+          border-radius: 0.293vw;
+          font-size: 1.172vw;
+          line-height: 1.367vw;
           &::before {
-            border-radius: 3px;
+            border-radius: 0.293vw;
           }
         }
       }
       .title {
-        left: 30px;
-        bottom: 12px;
-        font-size: 38px;
-        line-height: 45px;
+        left: 2.93vw;
+        bottom: 1.172vw;
+        font-size: 3.711vw;
+        line-height: 4.395vw;
         span {
-          font-size: 102px;
-          line-height: 102px;
+          font-size: 9.961vw;
+          line-height: 9.961vw;
         }
       }
       .video__wrapper {
-        padding: 30px;
+        padding: 2.93vw;
 
         #video {
-          border-radius: 8px;
+          border-radius: 0.781vw;
         }
         .control {
-          bottom: 50px;
-          left: 50px;
-          gap: 10px;
+          bottom: 4.883vw;
+          left: 4.883vw;
+          gap: 0.977vw;
           .control-button {
-            width: 34px;
-            height: 34px;
+            width: 3.32vw;
+            height: 3.32vw;
             border: 1px solid #ffffff;
             svg {
-              width: 12px;
+              width: 1.172vw;
               height: auto;
               transition: 0.25s ease-out opacity;
               .icon {
@@ -92,18 +92,18 @@
           }
           .muted {
             svg {
-              width: 19px;
+              width: 1.855vw;
             }
           }
           #progress {
-            width: 362px;
-            height: 4px;
-            margin: 0 5px;
-            border-radius: 100px;
+            width: 35.352vw;
+            height: 0.391vw;
+            margin: 0 0.488vw;
+            border-radius: 9.766vw;
           }
           #out {
-            font-size: 14px;
-            line-height: 17px;
+            font-size: 1.367vw;
+            line-height: 1.66vw;
           }
         }
       }
@@ -111,84 +111,84 @@
   }
   .colection {
     .colection__container {
-      width: 964px;
+      width: 94.141vw;
       overflow: hidden;
       .colection__top-block {
         position: relative;
         .colection__title {
-          font-size: 78px;
-          line-height: 78px;
+          font-size: 7.617vw;
+          line-height: 7.617vw;
           width: max-content;
         }
         .colection__subtitle-wrapper {
           background-image: url(../img/colection/colection-bg1024.svg);
           position: absolute;
-          right: 30px;
-          bottom: -556px;
-          width: 447px;
-          padding: 19px 24px 26px 39px;
-          gap: 15px;
+          right: 2.93vw;
+          bottom: -54.297vw;
+          width: 43.652vw;
+          padding: 1.855vw 2.344vw 2.539vw 3.809vw;
+          gap: 1.465vw;
           p {
-            font-size: 15px;
-            line-height: 22px;
+            font-size: 1.465vw;
+            line-height: 2.148vw;
           }
         }
       }
       .colection__galery {
-        height: 555px;
+        height: 54.199vw;
         .container1 {
-          width: 137.69px;
-          height: 148.02px;
-          top: 10px;
+          width: 13.446vw;
+          height: 14.455vw;
+          top: 0.977vw;
         }
         .container2 {
-          width: 210.06px;
-          height: 225.82px;
-          left: 165px;
-          top: 43px;
+          width: 20.514vw;
+          height: 22.053vw;
+          left: 16.113vw;
+          top: 4.199vw;
         }
         .container3 {
-          width: 302.93px;
-          height: 325.65px;
-          left: 330px;
-          top: 10px;
+          width: 29.583vw;
+          height: 31.802vw;
+          left: 32.227vw;
+          top: 0.977vw;
         }
         .container4 {
-          width: 186.57px;
-          height: 200.57px;
-          left: 661px;
-          top: 43px;
+          width: 18.22vw;
+          height: 19.587vw;
+          left: 64.551vw;
+          top: 4.199vw;
           z-index: 2;
         }
         .container5 {
-          width: 87.44px;
-          height: 93.99px;
-          left: 876px;
-          top: 10px;
+          width: 8.539vw;
+          height: 9.179vw;
+          left: 85.547vw;
+          top: 0.977vw;
         }
         .container6 {
-          width: 144.58px;
-          height: 155.42px;
-          left: 819px;
-          top: 173px;
+          width: 14.119vw;
+          height: 15.178vw;
+          left: 79.98vw;
+          top: 16.895vw;
         }
         .colection__descrition {
-          gap: 20px;
+          gap: 1.953vw;
           span {
-            margin: 12px 0 0 0;
-            padding: 3px 20px 0 8px;
-            border-radius: 2px 0px 0px 2px;
-            height: 23px;
-            font-size: 20px;
-            line-height: 20px;
+            margin: 1.172vw 0 0 0;
+            padding: 0.293vw 1.953vw 0 0.781vw;
+            border-radius: 0.195vw 0vw 0vw 0.195vw;
+            height: 2.246vw;
+            font-size: 1.953vw;
+            line-height: 1.953vw;
           }
           ul {
-            padding: 15px 0 15px 20px;
+            padding: 1.465vw 0 1.465vw 1.953vw;
             border-left: 1px solid #252530;
-            gap: 10px;
+            gap: 0.977vw;
             li {
-              font-size: 20px;
-              line-height: 20px;
+              font-size: 1.953vw;
+              line-height: 1.953vw;
             }
           }
         }
@@ -201,49 +201,49 @@
       .vertical-content {
         .utility {
           .utility__container {
-            width: 964px;
+            width: 94.141vw;
             .utility__title {
-              font-size: 78px;
-              line-height: 78px;
+              font-size: 7.617vw;
+              line-height: 7.617vw;
             }
             .utility__subtitle {
-              margin: 10px 0 0 0;
-              padding: 6px 26px 0 6px;
-              width: 345px;
-              border-radius: 2px 0px 0px 2px;
-              font-size: 20px;
-              line-height: 20px;
+              margin: 0.977vw 0 0 0;
+              padding: 0.586vw 2.539vw 0 0.586vw;
+              width: 33.691vw;
+              border-radius: 0.195vw 0vw 0vw 0.195vw;
+              font-size: 1.953vw;
+              line-height: 1.953vw;
             }
             .utility__slider {
-              margin: 60px 0 0 0;
-              gap: 367px;
+              margin: 5.859vw 0 0 0;
+              gap: 35.84vw;
               .slider__button-container {
-                gap: 12px;
+                gap: 1.172vw;
                 .button {
-                  width: 38px;
-                  height: 38px;
+                  width: 3.711vw;
+                  height: 3.711vw;
                   border: 1px solid #ffffff15;
                   .arrow {
-                    width: 12.67px;
+                    width: 1.237vw;
                   }
                 }
               }
               .slider__text {
-                width: 467px;
+                width: 45.605vw;
                 bottom: auto;
-                top: 63px;
-                font-size: 18px;
-                line-height: 28px;
+                top: 6.152vw;
+                font-size: 1.758vw;
+                line-height: 2.734vw;
               }
               .utility__number-container {
-                width: 72px;
+                width: 7.031vw;
                 #first-number {
-                  font-size: 42px;
-                  line-height: 33px;
+                  font-size: 4.102vw;
+                  line-height: 3.223vw;
                 }
                 #last-number {
-                  font-size: 26px;
-                  line-height: 26px;
+                  font-size: 2.539vw;
+                  line-height: 2.539vw;
                 }
               }
             }
@@ -251,23 +251,23 @@
         }
         .roadmap {
           .roadmap__continer {
-            gap: 30px;
+            gap: 2.93vw;
             transform: translateY(102%);
             .roadmap__title {
-              font-size: 165px;
-              line-height: 165px;
+              font-size: 16.113vw;
+              line-height: 16.113vw;
             }
             .roadmap__subtitle {
-              font-size: 22px;
-              line-height: 22px;
-              padding: 0.4% 20px 0 6px;
-              border-radius: 2px 0px 0px 2px;
+              font-size: 2.148vw;
+              line-height: 2.148vw;
+              padding: 0.4% 1.953vw 0 0.586vw;
+              border-radius: 0.195vw 0vw 0vw 0.195vw;
               transform: translateX(-100%);
             }
             .roadmap__description {
-              width: 345px;
-              font-size: 15px;
-              line-height: 22px;
+              width: 33.691vw;
+              font-size: 1.465vw;
+              line-height: 2.148vw;
               transform: translateX(-165%);
             }
           }
@@ -300,7 +300,7 @@
   .road {
     margin: -30vh 0 0 0;
     .road__container {
-      width: 964px;
+      width: 94.141vw;
       .slide-wrapper {
         .road__background {
           width: 105%;
@@ -310,8 +310,8 @@
         }
         .road-slide {
           height: 100vh;
-          gap: 80px;
-          padding: 150px 0 0 0;
+          gap: 7.813vw;
+          padding: 14.648vw 0 0 0;
           &.right {
             .left-block {
               .date {
@@ -322,49 +322,49 @@
             }
             .right-block {
               .checker {
-                margin: 40px 0 0 auto;
+                margin: 3.906vw 0 0 auto;
               }
             }
           }
           .left-block {
             .date {
-              width: 120px;
-              font-size: 62px;
-              line-height: 62px;
-              -webkit-text-stroke: 2px rgb(255, 255, 255);
+              width: 11.719vw;
+              font-size: 6.055vw;
+              line-height: 6.055vw;
+              -webkit-text-stroke: 0.195vw rgb(255, 255, 255);
               &::after {
                 transform: translateX(180%);
-                width: 15px;
+                width: 1.465vw;
                 height: 1px;
               }
             }
             strong {
-              font-size: 62px;
-              line-height: 62px;
+              font-size: 6.055vw;
+              line-height: 6.055vw;
             }
           }
           .right-block {
-            gap: 13px;
-            width: 214px;
-            padding: 13px 0 0 0;
+            gap: 1.27vw;
+            width: 20.898vw;
+            padding: 1.27vw 0 0 0;
             .title {
-              font-size: 28px;
-              line-height: 28px;
+              font-size: 2.734vw;
+              line-height: 2.734vw;
             }
             .subtitle {
-              font-size: 15px;
-              line-height: 22px;
+              font-size: 1.465vw;
+              line-height: 2.148vw;
             }
             .checker {
-              margin: 25px 0 0 0;
-              width: 70px;
+              margin: 2.441vw 0 0 0;
+              width: 6.836vw;
             }
           }
         }
       }
       .auto__wrapper {
         .auto__container {
-          width: 416px;
+          width: 40.625vw;
           margin: 0 auto;
           transition: 1.5s ease-in-out transform;
           &.right {
@@ -378,13 +378,13 @@
           }
           .auto-circle {
             .circle {
-              width: 161px;
+              width: 15.723vw;
             }
             .circle-slide {
-              width: 140px;
-              -webkit-box-shadow: 0px 0px 100px 47px rgba(0, 0, 0, 0.74);
-              -moz-box-shadow: 0px 0px 100px 47px rgba(0, 0, 0, 0.74);
-              box-shadow: 0px 0px 100px 47px rgba(0, 0, 0, 0.74);
+              width: 13.672vw;
+              -webkit-box-shadow: 0vw 0vw 9.766vw 4.59vw rgba(0, 0, 0, 0.74);
+              -moz-box-shadow: 0vw 0vw 9.766vw 4.59vw rgba(0, 0, 0, 0.74);
+              box-shadow: 0vw 0vw 9.766vw 4.59vw rgba(0, 0, 0, 0.74);
             }
           }
         }
@@ -393,71 +393,71 @@
   }
   .about {
     .car {
-      right: 47px;
+      right: 4.59vw;
       bottom: 25%;
-      width: 284px;
+      width: 27.734vw;
       z-index: 1;
     }
     .people {
-      right: 30px;
+      right: 2.93vw;
       bottom: 40%;
-      width: 170px;
+      width: 16.602vw;
     }
     .about__container {
-      width: 964px;
+      width: 94.141vw;
       .about__left-block {
-        width: 633px;
+        width: 61.816vw;
         border-right: 1px solid #252530;
         .about__title {
-          font-size: 78px;
-          line-height: 78px;
+          font-size: 7.617vw;
+          line-height: 7.617vw;
         }
         .about__descriptions {
-          gap: 20px;
-          padding: 30px 30px 30px 0;
+          gap: 1.953vw;
+          padding: 2.93vw 2.93vw 2.93vw 0;
           &:nth-child(2) {
             border-bottom: 1px solid #252530;
           }
           img {
-            width: 64px;
-            height: 64px;
+            width: 6.25vw;
+            height: 6.25vw;
           }
           .texst {
-            gap: 10px;
+            gap: 0.977vw;
             p {
-              font-size: 15px;
-              line-height: 22px;
+              font-size: 1.465vw;
+              line-height: 2.148vw;
             }
           }
         }
         .whitepaper {
-          margin: 0 0 0 84px;
-          width: 165px;
-          height: 44px;
+          margin: 0 0 0 8.203vw;
+          width: 16.113vw;
+          height: 4.297vw;
 
-          font-size: 12px;
-          line-height: 14px;
-          border-radius: 3px;
+          font-size: 1.172vw;
+          line-height: 1.367vw;
+          border-radius: 0.293vw;
           &::before {
-            border-radius: 3px;
+            border-radius: 0.293vw;
           }
         }
       }
       .about__sticker {
-        margin: 0 0 0 30px;
-        padding: 8px 53px 11px 13px;
-        border-radius: 2px 0px 0px 2px;
+        margin: 0 0 0 2.93vw;
+        padding: 0.781vw 5.176vw 1.074vw 1.27vw;
+        border-radius: 0.195vw 0vw 0vw 0.195vw;
 
         span {
-          font-size: 52px;
-          line-height: 52px;
+          font-size: 5.078vw;
+          line-height: 5.078vw;
         }
         strong {
           box-sizing: content-box;
-          padding: 0 0 0 27px;
-          width: 160px;
-          font-size: 15px;
-          line-height: 20px;
+          padding: 0 0 0 2.637vw;
+          width: 15.625vw;
+          font-size: 1.465vw;
+          line-height: 1.953vw;
         }
       }
     }
@@ -475,44 +475,44 @@
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
-      width: 1452px;
+      width: 141.797vw;
       z-index: 1;
     }
     .faq {
       .faq__container {
-        width: 964px;
-        gap: 40px;
+        width: 94.141vw;
+        gap: 3.906vw;
         .faq__title {
-          font-size: 78px;
-          line-height: 78px;
+          font-size: 7.617vw;
+          line-height: 7.617vw;
         }
         .faq__acordeon {
           .acordeon-item {
-            gap: 50px;
-            height: 64px;
+            gap: 4.883vw;
+            height: 6.25vw;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             .item-circle {
-              margin: 24px 0 0 0;
-              width: 9px;
-              height: 9px;
+              margin: 2.344vw 0 0 0;
+              width: 0.879vw;
+              height: 0.879vw;
               border: 1px solid #ffffff;
             }
             .item-number {
-              margin: 24px 0 0 33px;
-              font-size: 14px;
-              line-height: 16px;
+              margin: 2.344vw 0 0 3.223vw;
+              font-size: 1.367vw;
+              line-height: 1.563vw;
             }
             .item-text {
-              padding: 24px 0 25px 0;
-              gap: 8px;
+              padding: 2.344vw 0 2.441vw 0;
+              gap: 0.781vw;
               h3 {
-                font-size: 20px;
-                line-height: 22px;
+                font-size: 1.953vw;
+                line-height: 2.148vw;
               }
               p {
-                padding: 0 0 24px 0;
-                font-size: 14px;
-                line-height: 22px;
+                padding: 0 0 2.344vw 0;
+                font-size: 1.367vw;
+                line-height: 2.148vw;
               }
             }
             &.active {
@@ -534,97 +534,97 @@
       height: auto;
       display: block;
       .team-container {
-        width: 964px;
+        width: 94.141vw;
         .team__title {
-          font-size: 78px;
-          line-height: 78px;
+          font-size: 7.617vw;
+          line-height: 7.617vw;
         }
         .people__container {
-          margin: 60px 0 0 0;
+          margin: 5.859vw 0 0 0;
           .people {
-            width: 345px;
+            width: 33.691vw;
             position: relative;
             &:nth-child(2) {
-              margin: 279px 0 0 0;
+              margin: 27.246vw 0 0 0;
             }
             &:nth-child(3) {
-              margin: -80px 0 0 0;
+              margin: -7.813vw 0 0 0;
             }
             .inst {
-              width: 38px;
-              height: 38px;
-              left: 30px;
+              width: 3.711vw;
+              height: 3.711vw;
+              left: 2.93vw;
               border: 1px solid #7732ea;
               svg {
-                width: 18px;
+                width: 1.758vw;
               }
             }
             .people-circle {
-              right: 15px;
-              top: 70px;
+              right: 1.465vw;
+              top: 6.836vw;
               .circle {
-                width: 185px;
+                width: 18.066vw;
               }
               .car {
-                width: 162px;
+                width: 15.82vw;
               }
             }
             .photo {
-              width: 245px;
+              width: 23.926vw;
             }
             .name {
-              font-size: 28px;
-              line-height: 28px;
-              margin:  0 0 0 35px;
+              font-size: 2.734vw;
+              line-height: 2.734vw;
+              margin:  0 0 0 3.418vw;
             }
             .description {
-              margin: 10px 0 0 35px;
-              font-size: 15px;
-              line-height: 22px;
+              margin: 0.977vw 0 0 3.418vw;
+              font-size: 1.465vw;
+              line-height: 2.148vw;
             }
           }
         }
       }
     }
     .footer {
-      padding: 436px 0 0 0;
+      padding: 42.578vw 0 0 0;
       .footer__container {
-        padding: 0 0 45px 0;
-        width: 964px;
+        padding: 0 0 4.395vw 0;
+        width: 94.141vw;
         .register {
-          bottom: 180px;
-          width: 165px;
-          height: 44px;
-          font-size: 12px;
-          line-height: 14px;
-          border-radius: 3px;
+          bottom: 17.578vw;
+          width: 16.113vw;
+          height: 4.297vw;
+          font-size: 1.172vw;
+          line-height: 1.367vw;
+          border-radius: 0.293vw;
           &::before {
-            border-radius: 3px;
+            border-radius: 0.293vw;
           }
         }
         .rights {
-          font-size: 14px;
-          line-height: 20px;
+          font-size: 1.367vw;
+          line-height: 1.953vw;
         }
         .footer__social {
           transform: translateX(-31.5%);
-          gap: 12px;
+          gap: 1.172vw;
           a {
-            width: 34px;
-            height: 34px;
+            width: 3.32vw;
+            height: 3.32vw;
             border: 1px solid rgba(255, 255, 255, 0.082352);
             img {
-              width: 18px;
+              width: 1.758vw;
             }
           }
         }
         strong {
-          font-size: 14px;
-          line-height: 13px;
-          gap: 6px;
+          font-size: 1.367vw;
+          line-height: 1.27vw;
+          gap: 0.586vw;
           a {
             svg {
-              width: 90px;
+              width: 8.789vw;
             }
           }
         }

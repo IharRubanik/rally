@@ -190,6 +190,9 @@ body::-webkit-scrollbar-thumb {
   overflow: hidden;
   z-index: 2;
 }
+.welcome__wrapper .welcome .video__wrapper .youtube {
+  display: none;
+}
 .welcome__wrapper .welcome .video__wrapper.active {
   transform: translateY(0) scale(1);
 }

@@ -21,36 +21,32 @@ window.onload = function () {
     circleSlide = document.querySelectorAll(".circle-slide"),
     acordeonItem = document.querySelectorAll(".acordeon-item"),
     itemText = document.querySelectorAll(".item-text"),
-    a = 3.5,
-    b = 4,
-    c = 4.5,
-    d = 6.5,
-    f = 7.5,
-    g = 8.5,
-    h = 9.5,
-    k = 10.5,
-    l = 11.5,
-    acordeonHeight = 3.698;
-    const mediaQuery1024 = window.matchMedia("only screen and (max-width: 1280px)"),
-    mediaQuery768 = window.matchMedia("only screen and (max-width: 860px)")
+    auto = document.querySelector(".auto");
+  (a = 4),
+    (b = 4.5),
+    (c = 5),
+    (d = 7.5),
+    (f = 8.5),
+    (g = 9.5),
+    (h = 10.5),
+    (k = 11.5),
+    (l = 12.5),
+    (acordeonHeight = 3.698);
+  const mediaQuery1024 = window.matchMedia(
+      "only screen and (max-width: 1280px)"
+    ),
+    mediaQuery768 = window.matchMedia("only screen and (max-width: 860px)");
 
-
-if(mediaQuery1024.matches) {
-  acordeonHeight = 6.25;
-}
-if(mediaQuery768.matches) {
-  a = 2.5
-    b = 3
-    c = 3.5
-    d = 5
-    f = 6
-    g = 7
-    h = 8
-    k = 9
-    l = 10
-}
-
-
+  if (mediaQuery1024.matches) {
+    acordeonHeight = 6.25;
+    autoContainer.classList.remove("right");
+    auto.classList.remove("right");
+  }
+  if (mediaQuery768.matches) {
+    a = 2.5;
+    b = 3;
+    c = 3.5;
+  }
 
   // resize
   window.addEventListener("resize", function () {
@@ -152,8 +148,6 @@ if(mediaQuery768.matches) {
       verticalContent.classList.remove("step-one");
     }
 
-
-
     if (scrollTop >= screenHeight * b) {
       roadmap.classList.add("step-one");
     } else {
@@ -166,53 +160,54 @@ if(mediaQuery768.matches) {
       roadmap.classList.remove("step-two");
     }
 
-
-
-    if (scrollTop >= screenHeight * d) {
-      slideWrapper.classList.add("one");
-      autoContainer.classList.replace("right", "left");
-      addClacc(1);
-    } else {
-      slideWrapper.classList.remove("one");
-      autoContainer.classList.replace("left", "right");
-      addClacc(0);
-    }
-    if (scrollTop >= screenHeight * f) {
-      slideWrapper.classList.add("two");
-      autoContainer.classList.replace("left", "right");
-      addClacc(2);
-    } else {
-      slideWrapper.classList.remove("two");
-    }
-    if (scrollTop >= screenHeight * g) {
-      slideWrapper.classList.add("three");
-      autoContainer.classList.replace("right", "left");
-      addClacc(3);
-    } else {
-      slideWrapper.classList.remove("three");
-    }
-    if (scrollTop >= screenHeight * h) {
-      slideWrapper.classList.add("four");
-      autoContainer.classList.replace("left", "right");
-      addClacc(4);
-    } else {
-      slideWrapper.classList.remove("four");
-    }
-    if (scrollTop >= screenHeight * k) {
-      slideWrapper.classList.add("five");
-      autoContainer.classList.replace("right", "left");
-      addClacc(5);
-    } else {
-      slideWrapper.classList.remove("five");
-    }
-    if (scrollTop >= screenHeight * l) {
-      slideWrapper.classList.add("six");
-      autoContainer.classList.replace("left", "right");
-      addClacc(6);
-    } else {
-      slideWrapper.classList.remove("six");
+    if (window.innerWidth >= 1281) {
+      if (scrollTop >= screenHeight * d) {
+        slideWrapper.classList.add("one");
+        autoContainer.classList.replace("right", "left");
+        addClacc(1);
+      } else {
+        slideWrapper.classList.remove("one");
+        autoContainer.classList.replace("left", "right");
+        addClacc(0);
+      }
+      if (scrollTop >= screenHeight * f) {
+        slideWrapper.classList.add("two");
+        autoContainer.classList.replace("left", "right");
+        addClacc(2);
+      } else {
+        slideWrapper.classList.remove("two");
+      }
+      if (scrollTop >= screenHeight * g) {
+        slideWrapper.classList.add("three");
+        autoContainer.classList.replace("right", "left");
+        addClacc(3);
+      } else {
+        slideWrapper.classList.remove("three");
+      }
+      if (scrollTop >= screenHeight * h) {
+        slideWrapper.classList.add("four");
+        autoContainer.classList.replace("left", "right");
+        addClacc(4);
+      } else {
+        slideWrapper.classList.remove("four");
+      }
+      if (scrollTop >= screenHeight * k) {
+        slideWrapper.classList.add("five");
+        autoContainer.classList.replace("right", "left");
+        addClacc(5);
+      } else {
+        slideWrapper.classList.remove("five");
+      }
+      if (scrollTop >= screenHeight * l) {
+        slideWrapper.classList.add("six");
+        autoContainer.classList.replace("left", "right");
+        addClacc(6);
+      } else {
+        slideWrapper.classList.remove("six");
+      }
     }
   };
+
   function addClacc(slide) {
     for (let i = 0; i < circleSlide.length; i++) {
       circleSlide[i].classList.remove("active");
@@ -255,8 +250,7 @@ if(mediaQuery768.matches) {
 
   // utility__slider
 
-  let slider = document.querySelector(".utility__slider"),
-    prevBtn = document.querySelector(".button-prev"),
+  let prevBtn = document.querySelector(".button-prev"),
     nextBtn = document.querySelector(".button-next"),
     firstNumber = document.querySelector("#first-number"),
     lastNumber = document.querySelector("#last-number");
@@ -271,44 +265,6 @@ if(mediaQuery768.matches) {
   nextBtn.addEventListener("click", function () {
     showSlide((slideIndex += 1));
   });
-
-  // Add event listeners to detect swipe gestures on the slider
-  slider.addEventListener("touchstart", handleTouchStart, false);
-  slider.addEventListener("touchmove", handleTouchMove, false);
-
-  let xDown = null;
-  let yDown = null;
-
-  function handleTouchStart(evt) {
-    xDown = evt.touches[0].clientX;
-    yDown = evt.touches[0].clientY;
-  }
-
-  function handleTouchMove(evt) {
-    if (!xDown || !yDown) {
-      return;
-    }
-
-    let xUp = evt.touches[0].clientX;
-    let yUp = evt.touches[0].clientY;
-
-    let xDiff = xDown - xUp;
-    let yDiff = yDown - yUp;
-
-    if (Math.abs(xDiff) > Math.abs(yDiff)) {
-      /*most significant*/
-      if (xDiff > 0) {
-        /* left swipe */
-        showSlide((slideIndex += 1));
-      } else {
-        /* right swipe */
-        showSlide((slideIndex -= 1));
-      }
-    }
-    /* reset values */
-    xDown = null;
-    yDown = null;
-  }
 
   // Function to show a specific slide
   function showSlide(n) {
@@ -354,6 +310,73 @@ if(mediaQuery768.matches) {
   }
 
   showSlide();
+
+  // Road slider
+  if (window.innerWidth <= 1280) {
+    const nextBtn2 = document.querySelector(".button-next2"),
+      prevBtn2 = document.querySelector(".button-prev2");
+    let roadSlide = document.querySelectorAll(".road-slide"),
+      translateX = 0;
+    nextBtn2.addEventListener("click", nextRoadSlide);
+    prevBtn2.addEventListener("click", prevRoadSlide);
+
+    function nextRoadSlide() {
+      if (translateX === -(roadSlide.length - 1) * 100) {
+        return;
+      }
+      translateX -= 100;
+      slideWrapper.style.transform = `translateX(${translateX}%)`;
+    }
+    function prevRoadSlide() {
+      if (translateX === 0) {
+        return;
+      }
+      translateX += 100;
+      slideWrapper.style.transform = `translateX(${translateX}%)`;
+    }
+  }
+
+  // Swipe
+  const sliders = document.querySelectorAll(".slider");
+  let startX, startY;
+  sliders.forEach((slider) => {
+    slider.addEventListener("touchstart", function (e) {
+      startX = e.changedTouches[0].pageX;
+      startY = e.changedTouches[0].pageY;
+    });
+
+    slider.addEventListener("touchmove", function (e) {
+      const distX = e.changedTouches[0].pageX - startX;
+      const distY = e.changedTouches[0].pageY - startY;
+      if (Math.abs(distX) > Math.abs(distY)) {
+        e.preventDefault();
+      }
+    });
+
+    slider.addEventListener("touchend", function (e) {
+      const distX = e.changedTouches[0].pageX - startX;
+      const distY = e.changedTouches[0].pageY - startY;
+      if (Math.abs(distX) > Math.abs(distY)) {
+        if (distX > 0) {
+          if (slider.getAttribute("data-slider-id") === "slider-1") {
+            showSlide((slideIndex -= 1));
+          }
+          if (slider.getAttribute("data-slider-id") === "slider-2") {
+            prevRoadSlide()
+          }
+
+          // вызываем функцию для переключения на предыдущий слайд для соответствующего слайдера
+        } else {
+          if (slider.getAttribute("data-slider-id") === "slider-1") {
+            showSlide((slideIndex += 1));
+          }
+          if (slider.getAttribute("data-slider-id") === "slider-2") {
+            nextRoadSlide()
+          }
+        }
+      }
+    });
+  });
 
   // acordeon
   if (acordeonItem) {

@@ -160,26 +160,26 @@
           top: 20px;
         }
         .container4 {
-            width: 174.94px;
-            height: 188.07px;
+          width: 174.94px;
+          height: 188.07px;
           left: 0;
           top: 293px;
           z-index: 2;
         }
         .container5 {
-            width: 82.02px;
-            height: 88.17px;
+          width: 82.02px;
+          height: 88.17px;
           left: 626px;
           top: 20px;
         }
         .container6 {
-            width: 135.57px;
-            height: 145.73px;
+          width: 135.57px;
+          height: 145.73px;
           left: 148px;
           top: 425px;
         }
         .colection__descrition {
-            top: 616px;
+          top: 616px;
           gap: 20px;
           span {
             margin: 12px 0 0 0;
@@ -203,20 +203,20 @@
     }
   }
   .vertical__wrapper {
-    height: 250vh;
+    height: 300vh;
     .vertical-container {
       .vertical-content {
         .utility {
-            .utility__slide{
-                width: 140%;
-                margin: 0 0 0 -20%;
-            }
-            .utility-bg{
-                height: auto;
-                bottom: 0;
-                top: auto;
-                opacity: .85;
-            }
+          .utility__slide {
+            width: 140%;
+            margin: 0 0 0 -20%;
+          }
+          .utility-bg {
+            height: auto;
+            bottom: 0;
+            top: auto;
+            opacity: 0.85;
+          }
           .utility__container {
             width: 707px;
             .utility__title {
@@ -268,42 +268,56 @@
         }
         .roadmap {
           .roadmap__continer {
-            gap: 30px;
+            gap: 2.93vw;
             transform: translateY(102%);
+            &::after {
+              position: absolute;
+              display: block;
+              content: "";
+              background-image: url(../img/road/arrow.svg);
+              background-size: 100%;
+              background-repeat: no-repeat;
+              width: 100%;
+              height: 283px;
+            //   background: #7732ea;
+              top: 0;
+              left: 0;
+              transform: translateY(141%);
+            }
             .roadmap__title {
-                font-size: 136px;
-                line-height: 136px;
+              font-size: 16.113vw;
+              line-height: 16.113vw;
             }
             .roadmap__subtitle {
-              font-size: 22px;
-              line-height: 22px;
-              padding: 0.4% 20px 0 6px;
-              border-radius: 2px 0px 0px 2px;
-              transform: translateX(-160%);
+              font-size: 2.148vw;
+              line-height: 2.148vw;
+              padding: 0.4% 1.953vw 0 0.586vw;
+              border-radius: 0.195vw 0vw 0vw 0.195vw;
+              transform: translateX(-100%);
             }
             .roadmap__description {
-              width: 345px;
-              font-size: 15px;
-              line-height: 22px;
+              width: 33.691vw;
+              font-size: 1.465vw;
+              line-height: 2.148vw;
               transform: translateX(-165%);
             }
           }
           &.step-one {
             .roadmap__continer {
-              transform: translateY(27%);
+              transform: translateY(50%);
               .roadmap__title {
                 transform: translateY(0);
               }
               .roadmap__subtitle {
-                transform: translateX(131%);
+                transform: translateX(180%);
               }
             }
           }
           &.step-two {
             .roadmap__continer {
-              transform: translateY(-35%);
+              transform: translateY(0%);
               .roadmap__subtitle {
-                transform: translateX(131%);
+                transform: translateX(180%);
               }
               .roadmap__description {
                 transform: translateX(0%);
@@ -315,113 +329,178 @@
     }
   }
   .road {
-    height: 700vh;
-    margin: -30vh 0 0 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
     .road__container {
-        width: 707px;
+      width: 100%;
+      height: auto;
+      position: relative;
+      .slider__button-container2 {
+        display: flex;
+        position: absolute;
+        z-index: 3;
+        right: 30px;
+        top: 0;
+        gap: 12.001px;
+        .button {
+          width: 38.001px;
+          height: 38.001px;
+          border: 1px solid #ffffff15;
+          border-radius: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: none;
+          transition: 0.25s ease-out background;
+          .arrow {
+            transform: rotate(-90deg);
+            width: 12.667px;
+            height: auto;
+          }
+          &:hover {
+            background: #7732ea;
+          }
+        }
+        .button-next2 {
+          .arrow {
+            transform: rotate(90deg);
+          }
+        }
+      }
       .slide-wrapper {
-        &.one{
-            transform: translateY(-50vh);
-        }
-        &.two{
-            transform: translateY(-100vh);
-        }
-        &.three {
-            transform: translateY(-150vh);
-        }
-        &.four {
-            transform: translateY(-200vh);
-        }
-        &.five {
-            transform: translateY(-250vh);
-        }
-        &.six{
-            transform: translateY(-300vh);
-        }
+        display: flex;
+        width: auto;
+        height: auto;
 
         .road__background {
-          width: 108%;
-          left: 50%;
-          transform: translateX(-50%);
-          height: 97%;
+          display: none;
+        }
+        .road__background1024 {
+          display: block;
+          width: 6983.68px;
+          transform: translateY(-55%);
+          position: absolute;
+          left: 0;
+          top: 50%;
+          z-index: 1;
+          height: auto;
         }
         .road-slide {
-          height: 50vh;
-          gap: 47px;
-          padding: 132px 0 0 0;
+          z-index: 2;
+          height: auto;
+          gap: 310px;
+          padding: 0;
+          flex-direction: column;
+          width: 100vw;
+          flex-shrink: 0;
           &.right {
+            flex-direction: column;
+            justify-content: flex-start;
             .left-block {
+              display: flex;
               .date {
                 &::after {
-                  transform: translateX(-148%);
+                  transform: translateX(-169%);
                 }
               }
             }
             .right-block {
+              align-items: start;
+              p {
+                text-align: start;
+              }
               .checker {
-                margin: 20px 0 0 auto;
+                margin: 0;
               }
             }
           }
           .left-block {
+            margin: 0 0 0 30px;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            position: relative;
+            gap: 6px;
+            &::before {
+              content: "";
+              display: block;
+              height: 22px;
+              width: 1px;
+              background: #c5c5c5;
+              mix-blend-mode: color-dodge;
+              position: absolute;
+              left: 0;
+              bottom: -23%;
+            }
             .date {
-              width: 82px;
-              font-size: 42px;
-              line-height: 42px;
-              -webkit-text-stroke: 1px rgb(255, 255, 255);
+              width: 120.003px;
+              font-size: 62.003px;
+              line-height: 62.003px;
+              -webkit-text-stroke: 1.997px rgb(255, 255, 255);
               &::after {
-                transform: translateX(155%);
-                width: 12px;
-                height: 2px;
+                display: none;
               }
             }
             strong {
-                font-size: 42px;
-                line-height: 42px;
+              font-size: 62.003px;
+              line-height: 62.003px;
             }
           }
           .right-block {
-            gap: 10px;
-            width: 214px;
-            padding: 5px 0 0 0;
+            padding: 0;
+            gap: 13.005px;
+            width: 700px;
+            margin: 0 0 0 2.93vw;
             .title {
-              font-size: 28px;
-              line-height: 28px;
+              font-size: 27.996px;
+              line-height: 27.996px;
             }
             .subtitle {
-              font-size: 15px;
-              line-height: 22px;
+              font-size: 15.002px;
+              line-height: 21.996px;
             }
             .checker {
-              margin: 20px 0 0 0;
-              width: 56px;
+              display: flex;
+              order: -1;
+              margin: 0;
+              width: 70.001px;
             }
           }
         }
       }
       .auto__wrapper {
+        height: auto;
+        transform: translateY(-14%);
+        z-index: 2;
         .auto__container {
-          width: 300px;
+          width: max-content;
           margin: 0 auto;
           transition: 1.5s ease-in-out transform;
+          z-index: 1;
+
+          .auto {
+            width: 39.355vw;
+            transform: rotate(-90deg);
+            margin: 0;
+          }
           &.right {
-            transform: translateX(45%);
+            transform: translateX(0);
           }
           &.left {
-            transform: translateX(-45%);
+            transform: translateX(0);
             .auto-circle {
-              transform: translateX(10%);
+              transform: translateX(0);
             }
           }
           .auto-circle {
             .circle {
-              width: 126px;
+              width: 161.004px;
             }
             .circle-slide {
-              width: 110px;
-              -webkit-box-shadow: 0px 0px 100px 47px rgba(0, 0, 0, 0.74);
-              -moz-box-shadow: 0px 0px 100px 47px rgba(0, 0, 0, 0.74);
-              box-shadow: 0px 0px 100px 47px rgba(0, 0, 0, 0.74);
+              width: 140.001px;
+              -webkit-box-shadow: 0px 0px 100.004px 47.002px rgba(0, 0, 0, 0.74);
+              -moz-box-shadow: 0px 0px 100.004px 47.002px rgba(0, 0, 0, 0.74);
+              box-shadow: 0px 0px 100.004px 47.002px rgba(0, 0, 0, 0.74);
             }
           }
         }
@@ -442,7 +521,7 @@
       width: 170px;
     }
     .about__container {
-        width: 707px;
+      width: 707px;
       .about__left-block {
         width: 633px;
         border-right: 1px solid #252530;

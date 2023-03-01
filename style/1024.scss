@@ -196,7 +196,7 @@
     }
   }
   .vertical__wrapper {
-    height: 300vh;
+    height: 350vh;
     .vertical-container {
       .vertical-content {
         .utility {
@@ -273,7 +273,7 @@
           }
           &.step-one {
             .roadmap__continer {
-              transform: translateY(27%);
+              transform: translateY(50%);
               .roadmap__title {
                 transform: translateY(0);
               }
@@ -284,7 +284,7 @@
           }
           &.step-two {
             .roadmap__continer {
-              transform: translateY(-35%);
+              transform: translateY(0%);
               .roadmap__subtitle {
                 transform: translateX(180%);
               }
@@ -298,22 +298,77 @@
     }
   }
   .road {
-    margin: -30vh 0 0 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
     .road__container {
-      width: 94.141vw;
+      width: 100%;
+      height: auto;
+      position: relative;
+      .slider__button-container2 {
+        display: flex;
+        position: absolute;
+        z-index: 4;
+        right: 2.93vw;
+        top: 0;
+        gap: 1.172vw;
+        .button {
+          width: 3.711vw;
+          height: 3.711vw;
+          border: 1px solid #ffffff15;
+          border-radius: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: none;
+          transition: 0.25s ease-out background;
+          .arrow {
+            transform: rotate(-90deg);
+            width: 1.237vw;
+            height: auto;
+          }
+          &:hover {
+            background: #7732ea;
+          }
+        }
+        .button-next2 {
+          .arrow {
+            transform: rotate(90deg);
+          }
+        }
+      }
       .slide-wrapper {
+        display: flex;
+        width: auto;
+        height: auto;
+
+     
         .road__background {
-          width: 105%;
-          left: 50%;
-          transform: translateX(-50%);
-          height: 97%;
+          display: none;
+        }
+        .road__background1024 {
+          display: block;
+          width: 682vw;
+          transform: translateY(-55%);
+          position: absolute;
+          left: 0;
+          top: 50%;
+          z-index: 1;
+          height: auto;
         }
         .road-slide {
-          height: 100vh;
-          gap: 7.813vw;
-          padding: 14.648vw 0 0 0;
+          z-index: 2;
+          height: auto;
+          gap: 30.273vw;
+          padding: 0;
+          flex-direction: column;
+          width: 100vw;
+          flex-shrink: 0;
           &.right {
+            flex-direction: column;
+            justify-content: flex-start;
             .left-block {
+              display: flex;
               .date {
                 &::after {
                   transform: translateX(-169%);
@@ -321,21 +376,39 @@
               }
             }
             .right-block {
+              align-items: start;
+              p {
+                text-align: start;
+              }
               .checker {
-                margin: 3.906vw 0 0 auto;
+                margin: 0;
               }
             }
           }
           .left-block {
+            margin: 0 0 0 2.93vw;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            position: relative;
+            gap: 0.586vw;
+            &::before {
+              content: "";
+              display: block;
+              height: 2.148vw;
+              width: 1px;
+              background: #c5c5c5;
+              mix-blend-mode: color-dodge;
+              position: absolute;
+              left: 0;
+              bottom: -23%;
+            }
             .date {
               width: 11.719vw;
               font-size: 6.055vw;
               line-height: 6.055vw;
               -webkit-text-stroke: 0.195vw rgb(255, 255, 255);
               &::after {
-                transform: translateX(180%);
-                width: 1.465vw;
-                height: 1px;
+                display: none;
               }
             }
             strong {
@@ -344,9 +417,10 @@
             }
           }
           .right-block {
+            padding: 0;
             gap: 1.27vw;
-            width: 20.898vw;
-            padding: 1.27vw 0 0 0;
+            width: 68.359vw;
+            margin: 0 0 0 2.93vw;
             .title {
               font-size: 2.734vw;
               line-height: 2.734vw;
@@ -356,24 +430,36 @@
               line-height: 2.148vw;
             }
             .checker {
-              margin: 2.441vw 0 0 0;
+              display: flex;
+              order: -1;
+              margin: 0;
               width: 6.836vw;
             }
           }
         }
       }
       .auto__wrapper {
+        height: auto;
+        transform: translateY(-14%);
+        z-index: 2;
         .auto__container {
-          width: 40.625vw;
+          width: max-content;
           margin: 0 auto;
           transition: 1.5s ease-in-out transform;
+          z-index: 1;
+
+          .auto {
+            width: 39.355vw;
+            transform: rotate(-90deg);
+            margin: 0;
+          }
           &.right {
-            transform: translateX(40%);
+            transform: translateX(0);
           }
           &.left {
-            transform: translateX(-40%);
+            transform: translateX(0);
             .auto-circle {
-              transform: translateX(10%);
+              transform: translateX(0);
             }
           }
           .auto-circle {
@@ -575,7 +661,7 @@
             .name {
               font-size: 2.734vw;
               line-height: 2.734vw;
-              margin:  0 0 0 3.418vw;
+              margin: 0 0 0 3.418vw;
             }
             .description {
               margin: 0.977vw 0 0 3.418vw;

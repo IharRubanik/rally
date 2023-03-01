@@ -21,17 +21,17 @@ window.onload = function () {
     circleSlide = document.querySelectorAll(".circle-slide"),
     acordeonItem = document.querySelectorAll(".acordeon-item"),
     itemText = document.querySelectorAll(".item-text"),
-    auto = document.querySelector(".auto");
-  (a = 4),
-    (b = 4.5),
-    (c = 5),
-    (d = 7.5),
-    (f = 8.5),
-    (g = 9.5),
-    (h = 10.5),
-    (k = 11.5),
-    (l = 12.5),
-    (acordeonHeight = 3.698);
+    auto = document.querySelector(".auto"),
+    a = 3,
+    b = 3.5,
+    c = 4,
+    d = 6,
+    f = 7,
+    g = 8,
+    h = 9,
+    k = 10,
+    l = 11,
+    acordeonHeight = 3.698;
   const mediaQuery1024 = window.matchMedia(
       "only screen and (max-width: 1280px)"
     ),
@@ -41,8 +41,14 @@ window.onload = function () {
     acordeonHeight = 6.25;
     autoContainer.classList.remove("right");
     auto.classList.remove("right");
+
+    a = 4;
+    b = 4.5;
+    c = 5;
   }
   if (mediaQuery768.matches) {
+    video.play();
+    acordeonHeight = 8.333;
     a = 2.5;
     b = 3;
     c = 3.5;
@@ -326,6 +332,7 @@ window.onload = function () {
       }
       translateX -= 100;
       slideWrapper.style.transform = `translateX(${translateX}%)`;
+      addClacc(-translateX / 100);
     }
     function prevRoadSlide() {
       if (translateX === 0) {
@@ -333,6 +340,7 @@ window.onload = function () {
       }
       translateX += 100;
       slideWrapper.style.transform = `translateX(${translateX}%)`;
+      addClacc(-translateX / 100);
     }
   }
 
@@ -362,7 +370,7 @@ window.onload = function () {
             showSlide((slideIndex -= 1));
           }
           if (slider.getAttribute("data-slider-id") === "slider-2") {
-            prevRoadSlide()
+            prevRoadSlide();
           }
 
           // вызываем функцию для переключения на предыдущий слайд для соответствующего слайдера
@@ -371,7 +379,7 @@ window.onload = function () {
             showSlide((slideIndex += 1));
           }
           if (slider.getAttribute("data-slider-id") === "slider-2") {
-            nextRoadSlide()
+            nextRoadSlide();
           }
         }
       }

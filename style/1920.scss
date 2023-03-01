@@ -693,7 +693,7 @@ body {
   width: 100%;
   transition: 0.75s ease-in-out margin;
   position: relative;
-  height: 700vh;
+  height: 800vh;
   .road__container {
     margin: 0 auto;
     width: 72.917vw;
@@ -702,14 +702,18 @@ body {
     left: 0;
     top: 0;
     overflow: hidden;
+    .slider__button-container2{
+      display: none;
+    }
     .slide-wrapper {
       width: 100%;
       transition: 1.5s ease-in-out transform;
       position: relative;
-      .slider__button-container{
+    
+      .road__background1024{
         display: none;
       }
-      .road__background1024{
+      .road__background768{
         display: none;
       }
       .road__background {

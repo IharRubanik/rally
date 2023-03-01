@@ -679,7 +679,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   transition: 0.75s ease-in-out margin;
   position: relative;
-  height: 700vh;
+  height: 800vh;
 }
 .road .road__container {
   margin: 0 auto;
@@ -690,15 +690,18 @@ body::-webkit-scrollbar-thumb {
   top: 0;
   overflow: hidden;
 }
+.road .road__container .slider__button-container2 {
+  display: none;
+}
 .road .road__container .slide-wrapper {
   width: 100%;
   transition: 1.5s ease-in-out transform;
   position: relative;
 }
-.road .road__container .slide-wrapper .slider__button-container {
+.road .road__container .slide-wrapper .road__background1024 {
   display: none;
 }
-.road .road__container .slide-wrapper .road__background1024 {
+.road .road__container .slide-wrapper .road__background768 {
   display: none;
 }
 .road .road__container .slide-wrapper .road__background {

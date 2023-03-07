@@ -1,10 +1,24 @@
 @media only screen and (max-width: 1280px) {
+  .wrapper {
+    .preloader {
+      .load {
+        bottom: 7.813vw;
+      }
+    }
+    &.preloader {
+      .logo {
+        position: fixed;
+        
+      }
+    }
+  }
   .logo {
     position: absolute;
     top: 1.953vw;
     left: 2.93vw;
     width: 6.25vw;
     height: auto;
+    transition: none;
   }
   .welcome__wrapper {
     .welcome {
@@ -342,7 +356,6 @@
         width: auto;
         height: auto;
 
-     
         .road__background {
           display: none;
         }

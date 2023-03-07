@@ -1,4 +1,7 @@
 @media only screen and (max-width: 860px) {
+  .wrapper .preloader .load {
+    bottom: 9.115vw;
+  }
   .logo {
     top: 2.604vw;
     left: 3.906vw;

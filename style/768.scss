@@ -1,4 +1,11 @@
 @media only screen and (max-width: 860px) {
+  .wrapper {
+    .preloader {
+      .load {
+        bottom: 9.115vw;
+      }
+    }
+  }
   .logo {
     top: 2.604vw;
     left: 3.906vw;
@@ -581,18 +588,15 @@
         .people__container {
           margin: 4.818vw 0 0 0;
           flex-wrap: wrap;
-          
+
           .people {
             width: 44.271vw;
-          
+
             &:nth-child(2) {
               margin: 0;
-       
-              
             }
             &:nth-child(3) {
               margin: 5.208vw auto 0 auto;
-           
             }
             .inst {
               width: 4.948vw;

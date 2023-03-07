@@ -1,4 +1,7 @@
 window.onload = function () {
+  let body = document.querySelector('body'),
+  wrapper = document.querySelector('.wrapper'),
+  preloader = document.querySelector('#preloader')
   let screenHeight = window.screen.height,
     video = document.querySelector("#video"),
     muted = document.querySelector(".muted"),
@@ -50,6 +53,16 @@ window.onload = function () {
     b = 3;
     c = 3.5;
   }
+
+  // preloader
+
+  body.style.overflow = 'visible'
+  wrapper.classList.remove('preloader')
+  setTimeout(() => {
+    preloader.style.display = 'none'
+  }, 1000);
+ 
+
   // resize
   window.addEventListener("resize", function () {
     screenHeight = window.screen.height;

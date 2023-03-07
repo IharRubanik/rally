@@ -21,6 +21,7 @@ window.onload = function () {
     circleSlide = document.querySelectorAll(".circle-slide"),
     acordeonItem = document.querySelectorAll(".acordeon-item"),
     itemText = document.querySelectorAll(".item-text"),
+    itemTextTitle = document.querySelectorAll(".item-text-title"),
     auto = document.querySelector(".auto"),
     a = 3,
     b = 3.5,
@@ -30,30 +31,25 @@ window.onload = function () {
     g = 8,
     h = 9,
     k = 10,
-    l = 11,
-    acordeonHeight = 3.698;
+    l = 11;
   const mediaQuery1024 = window.matchMedia(
       "only screen and (max-width: 1280px)"
     ),
     mediaQuery768 = window.matchMedia("only screen and (max-width: 860px)");
 
   if (mediaQuery1024.matches) {
-    acordeonHeight = 6.25;
     autoContainer.classList.remove("right");
     auto.classList.remove("right");
-
     a = 4;
     b = 4.5;
     c = 5;
   }
   if (mediaQuery768.matches) {
     video.play();
-    acordeonHeight = 8.333;
     a = 2.5;
     b = 3;
     c = 3.5;
   }
-
   // resize
   window.addEventListener("resize", function () {
     screenHeight = window.screen.height;
@@ -386,12 +382,17 @@ window.onload = function () {
     });
   });
 
+  // console.log(getComputedStyle(itemText[1].paddingTop))
   // acordeon
+
   if (acordeonItem) {
     for (let i = 0; i < acordeonItem.length; i++) {
+      let style = getComputedStyle(itemText[i]);
+      let padding = Number(style.paddingBottom.replace(/[^0-9.]/g, ""));
       acordeonItem[i].addEventListener("click", function (e) {
         if (acordeonItem[i].classList.contains("active")) {
-          acordeonItem[i].style.height = acordeonHeight + "vw";
+          acordeonItem[i].style.height =
+            itemTextTitle[i].scrollHeight + padding * 2 + "px";
           acordeonItem[i].classList.remove("active");
         } else {
           acordeonItem[i].style.height = itemText[i].scrollHeight + "px";
@@ -402,11 +403,15 @@ window.onload = function () {
     }
     function removeAccordion(item) {
       for (let i = 0; i < acordeonItem.length; i++) {
+        let style = getComputedStyle(itemText[i]);
+        let padding = Number(style.paddingBottom.replace(/[^0-9.]/g, ""));
         if (item !== acordeonItem[i]) {
           acordeonItem[i].classList.remove("active");
-          acordeonItem[i].style.height = acordeonHeight + "vw";
+          acordeonItem[i].style.height =
+            itemTextTitle[i].scrollHeight + padding * 2 + "px";
         }
       }
     }
+    removeAccordion();
   }
 };

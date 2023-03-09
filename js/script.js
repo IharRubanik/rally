@@ -39,7 +39,7 @@ window.onload = function () {
     mediaQuery768 = window.matchMedia("only screen and (max-width: 860px)"),
     mediaQuery375 = window.matchMedia("only screen and (max-width: 600px)");
 
-  if (mediaQuery1024.matches) {
+  if (mediaQuery1024.matches || window.innerWidth <= 1281) {
     autoContainer.classList.remove("right");
     auto.classList.remove("right");
     a = 4;

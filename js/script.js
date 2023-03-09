@@ -35,18 +35,16 @@ window.onload = function () {
     h = 9,
     k = 10,
     l = 11;
-  const mediaQuery1024 = window.matchMedia(
-      "only screen and (max-width: 1280px)"
-    ),
+  const mediaQuery1024 = window.matchMedia("only screen and (max-width: 1280px)"),
     mediaQuery768 = window.matchMedia("only screen and (max-width: 860px)"),
     mediaQuery375 = window.matchMedia("only screen and (max-width: 600px)");
 
   if (mediaQuery1024.matches) {
     autoContainer.classList.remove("right");
     auto.classList.remove("right");
-    a = 5;
-    b = 6;
-    c = 7;
+    a = 4;
+    b = 4.5;
+    c = 5;
   }
   if (mediaQuery768.matches) {
     video.play();
@@ -56,9 +54,6 @@ window.onload = function () {
   }
   if (mediaQuery375.matches) {
     video.play();
-    a = 2.5;
-    b = 3;
-    c = 3.5;
   }
 
 

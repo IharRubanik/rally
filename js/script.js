@@ -43,22 +43,7 @@ window.onload = function () {
     mediaQuery375 = window.matchMedia("only screen and (max-width: 600px)");
 
   function aspectRatio() {
-    if (mediaQuery1024.matches) {
-      autoContainer.classList.remove("right");
-      auto.classList.remove("right");
-      a = 4;
-      b = 4.5;
-      c = 5;
-    }
-    if (mediaQuery768.matches) {
-      video.play();
-      a = 2.5;
-      b = 3;
-      c = 3.5;
-    }
-    if (mediaQuery375.matches) {
-      video.play();
-    } else {
+    if(!mediaQuery1024.matches || !mediaQuery1024.matches || !mediaQuery375.matches ) {
       a = 3;
       b = 3.5;
       c = 4;
@@ -69,6 +54,27 @@ window.onload = function () {
       k = 10;
       l = 11;
     }
+    if (mediaQuery1024.matches) {
+      autoContainer.classList.remove("right");
+      auto.classList.remove("right");
+      a = 5;
+      b = 6;
+      c = 7;
+    }
+    if (mediaQuery768.matches) {
+      video.play();
+      a = 2.5;
+      b = 3;
+      c = 3.5;
+    }
+    if (mediaQuery375.matches) {
+      video.play();
+      a = 2.5;
+      b = 3;
+      c = 3.5;
+    } 
+    
+  
   }
   aspectRatio();
 

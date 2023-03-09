@@ -59,15 +59,15 @@ window.onload = function () {
     if (mediaQuery375.matches) {
       video.play();
     } else {
-      (a = 3),
-        (b = 3.5),
-        (c = 4),
-        (d = 6),
-        (f = 7),
-        (g = 8),
-        (h = 9),
-        (k = 10),
-        (l = 11);
+      a = 3;
+      b = 3.5;
+      c = 4;
+      d = 6;
+      f = 7;
+      g = 8;
+      h = 9;
+      k = 10;
+      l = 11;
     }
   }
   aspectRatio();

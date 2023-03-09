@@ -18,6 +18,22 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes bounce-in {
+  0% {
+    transform: scale(1);
+  }
+  5% {
+    transform: scale(1.06);
+  }
+  20% {
+    transform: scale(1.03);
+  }
+  30% {
+    transform: scale(1.06);
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -51,9 +67,16 @@ body {
     opacity: 0;
     transition: 1s ease-in-out opacity;
     display: flex;
-    align-items: end;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    .preloader-logo {
+      width: 6.302vw;
+      height: auto;
+      animation: 1.1s bounce-in linear infinite;
+    }
     .load {
-      position: relative;
+      position: absolute;
       margin: 0 auto;
       bottom: 4.688vw;
       width: 25px;
@@ -65,21 +88,31 @@ body {
     .preloader {
       opacity: 1;
     }
-    .logo {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(1.6);
+    .welcome__wrapper {
+      .welcome {
+        .welcome-bg {
+          transform: translateY(100%);
+          transition: 2.5s transform ease-in-out;
+        }
+        .title {
+          opacity: 0;
+          span{
+            transform: translateY(100%);
+          }
+          
+          
+        }
+      }
     }
   }
 }
 .logo {
-  position: fixed;
+  position: absolute;
   top: 2.083vw;
   left: 2.604vw;
   width: 4.167vw;
   height: auto;
   z-index: 10;
-  transition: 1s ease-in-out top, 1s ease-in-out left, 1s ease-in-out transform;
 }
 .welcome__wrapper {
   height: 200vh;
@@ -103,7 +136,9 @@ body {
         opacity: 0;
       }
     }
-
+    .welcome-bg375{
+      display: none;
+    }
     .social {
       position: absolute;
       left: 3.646vw;
@@ -216,6 +251,7 @@ body {
       color: #ffffff;
       display: flex;
       flex-direction: column;
+      transition: 1s height opacity;
       span {
         font-family: "Teko";
         font-style: normal;
@@ -223,6 +259,7 @@ body {
         font-size: 8.438vw;
         line-height: 8.438vw;
         color: #ffffff;
+        transition: 1s transform ease-in-out;
       }
     }
     .video__wrapper {

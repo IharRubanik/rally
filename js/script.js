@@ -1,7 +1,7 @@
 window.onload = function () {
-  let body = document.querySelector('body'),
-  wrapper = document.querySelector('.wrapper'),
-  preloader = document.querySelector('#preloader')
+  let body = document.querySelector("body"),
+    wrapper = document.querySelector(".wrapper"),
+    preloader = document.querySelector("#preloader");
   let screenHeight = window.screen.height,
     video = document.querySelector("#video"),
     muted = document.querySelector(".muted"),
@@ -43,9 +43,9 @@ window.onload = function () {
   if (mediaQuery1024.matches) {
     autoContainer.classList.remove("right");
     auto.classList.remove("right");
-    a = 4;
-    b = 4.5;
-    c = 5;
+    a = 5;
+    b = 6;
+    c = 7;
   }
   if (mediaQuery768.matches) {
     video.play();
@@ -56,12 +56,13 @@ window.onload = function () {
 
   // preloader
 
-  body.style.overflow = 'visible'
-  wrapper.classList.remove('preloader')
   setTimeout(() => {
-    preloader.style.display = 'none'
-  }, 1000);
- 
+    body.style.overflow = "visible";
+    wrapper.classList.remove("preloader");
+    setTimeout(() => {
+      preloader.style.display = "none";
+    }, 1000);
+  }, 2000);
 
   // resize
   window.addEventListener("resize", function () {
@@ -351,6 +352,17 @@ window.onload = function () {
       slideWrapper.style.transform = `translateX(${translateX}%)`;
       addClacc(-translateX / 100);
     }
+
+    // color click
+    let button = document.querySelectorAll(".button");
+    for (let i = 0; i < button.length; i++) {
+      button[i].addEventListener("click", function () {
+        button[i].style.background = "#7732EA";
+        setTimeout(() => {
+          button[i].style.background = "none";
+        }, 300);
+      });
+    }
   }
 
   // Swipe
@@ -381,8 +393,6 @@ window.onload = function () {
           if (slider.getAttribute("data-slider-id") === "slider-2") {
             prevRoadSlide();
           }
-
-          // вызываем функцию для переключения на предыдущий слайд для соответствующего слайдера
         } else {
           if (slider.getAttribute("data-slider-id") === "slider-1") {
             showSlide((slideIndex += 1));
@@ -395,7 +405,6 @@ window.onload = function () {
     });
   });
 
-  // console.log(getComputedStyle(itemText[1].paddingTop))
   // acordeon
 
   if (acordeonItem) {

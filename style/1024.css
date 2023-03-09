@@ -2,8 +2,8 @@
   .wrapper .preloader .load {
     bottom: 7.813vw;
   }
-  .wrapper.preloader .logo {
-    position: fixed;
+  .wrapper .preloader .preloader-logo {
+    width: 15.755vw;
   }
   .logo {
     position: absolute;
@@ -12,6 +12,9 @@
     width: 6.25vw;
     height: auto;
     transition: none;
+  }
+  .welcome__wrapper {
+    height: 250vh;
   }
   .welcome__wrapper .welcome .welcome-bg {
     bottom: 0;
@@ -69,6 +72,7 @@
     line-height: 4.395vw;
   }
   .welcome__wrapper .welcome .title span {
+    margin: 1.172vw 0 0 0;
     font-size: 9.961vw;
     line-height: 9.961vw;
   }
@@ -195,7 +199,7 @@
     line-height: 1.953vw;
   }
   .vertical__wrapper {
-    height: 350vh;
+    height: 500vh;
   }
   .vertical__wrapper .vertical-container .vertical-content .utility .utility__container {
     width: 94.141vw;
@@ -223,6 +227,9 @@
     width: 3.711vw;
     height: 3.711vw;
     border: 1px solid rgba(255, 255, 255, 0.0823529412);
+  }
+  .vertical__wrapper .vertical-container .vertical-content .utility .utility__container .utility__slider .slider__button-container .button:not([disabled]):hover {
+    background: none;
   }
   .vertical__wrapper .vertical-container .vertical-content .utility .utility__container .utility__slider .slider__button-container .button .arrow {
     width: 1.237vw;
@@ -312,6 +319,9 @@
     justify-content: center;
     background: none;
     transition: 0.25s ease-out background;
+  }
+  .road .road__container .slider__button-container2 .button:not([disabled]):hover {
+    background: none;
   }
   .road .road__container .slider__button-container2 .button .arrow {
     transform: rotate(-90deg);

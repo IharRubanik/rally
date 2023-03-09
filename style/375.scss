@@ -4,6 +4,9 @@
       .load{
         bottom: 50px;
       }
+      .preloader-logo{
+        width: 26.667vw;
+      }
     }
   }
   .logo {
@@ -76,6 +79,7 @@
         font-size: 4.8vw;
         line-height: 5.6vw;
         span {
+          margin: 2.133vw 0 0 0;
           font-size: 14.933vw;
           line-height: 13.867vw;
         }
@@ -265,8 +269,8 @@
               line-height: 23.467vw;
             }
             .roadmap__subtitle {
-              font-size: 5.866vw;
-              line-height: 5.866vw;
+              font-size: 5.333vw;
+              line-height: 5.333vw;
               padding: 0.4% 5.333vw 0 1.599vw;
               border-radius: 0.533vw 0vw 0vw 0.533vw;
               transform: translateX(-115%);
@@ -414,7 +418,7 @@
       width: 70.666vw;
     }
     .people {
-      right: -4vw;
+      right: 4vw;
       bottom: 37.6vw;
       width: 42.4vw;
     }

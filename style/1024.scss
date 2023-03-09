@@ -4,11 +4,8 @@
       .load {
         bottom: 7.813vw;
       }
-    }
-    &.preloader {
-      .logo {
-        position: fixed;
-        
+      .preloader-logo{
+        width: 15.755vw;
       }
     }
   }
@@ -21,6 +18,7 @@
     transition: none;
   }
   .welcome__wrapper {
+    height: 250vh;
     .welcome {
       .welcome-bg {
         bottom: 0;
@@ -77,6 +75,7 @@
         font-size: 3.711vw;
         line-height: 4.395vw;
         span {
+          margin: 1.172vw 0 0 0;
           font-size: 9.961vw;
           line-height: 9.961vw;
         }
@@ -210,7 +209,7 @@
     }
   }
   .vertical__wrapper {
-    height: 350vh;
+    height: 500vh;
     .vertical-container {
       .vertical-content {
         .utility {
@@ -237,6 +236,9 @@
                   width: 3.711vw;
                   height: 3.711vw;
                   border: 1px solid #ffffff15;
+                  &:not([disabled]):hover{
+                    background: none;
+                  }
                   .arrow {
                     width: 1.237vw;
                   }
@@ -336,6 +338,9 @@
           justify-content: center;
           background: none;
           transition: 0.25s ease-out background;
+          &:not([disabled]):hover{
+            background: none;
+          }
           .arrow {
             transform: rotate(-90deg);
             width: 1.237vw;

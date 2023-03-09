@@ -38,7 +38,8 @@ window.onload = function () {
   const mediaQuery1024 = window.matchMedia(
       "only screen and (max-width: 1280px)"
     ),
-    mediaQuery768 = window.matchMedia("only screen and (max-width: 860px)");
+    mediaQuery768 = window.matchMedia("only screen and (max-width: 860px)"),
+    mediaQuery375 = window.matchMedia("only screen and (max-width: 600px)");
 
   if (mediaQuery1024.matches) {
     autoContainer.classList.remove("right");
@@ -53,6 +54,14 @@ window.onload = function () {
     b = 3;
     c = 3.5;
   }
+  if (mediaQuery375.matches) {
+    video.play();
+    a = 2.5;
+    b = 3;
+    c = 3.5;
+  }
+
+
 
   // preloader
 

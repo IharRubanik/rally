@@ -31,11 +31,16 @@
     transform: scale(1.06);
   }
 }
+html {
+  background: #0b0b0c;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
+  background: #0b0b0c;
   overflow: hidden;
 }
 body::-webkit-scrollbar {

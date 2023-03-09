@@ -208,7 +208,7 @@
   }
   .vertical__wrapper .vertical-container .vertical-content .utility .utility__container .utility__subtitle {
     margin: 2.667vw 0 0 0;
-    padding: 1.599vw 6.933vw 0 1.599vw;
+    padding: 1.599vw 6.933vw 1.599vw 1.599vw;
     width: 92vw;
     border-radius: 0.533vw 0vw 0vw 0.533vw;
     font-size: 5.333vw;

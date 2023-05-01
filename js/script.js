@@ -296,27 +296,6 @@ window.onload = function () {
     interval();
   }
 
-  // function addClasses(elements) {
-  //   let i = 0;
-  //     setTimeout(() => {
-  //       elements[i].classList.add("active");
-  //       if (i > 0) {
-  //         elements[i - 1].classList.remove("active");
-  //         elements[i - 1].classList.add("noactive");
-  //         elements[elements.length - 1].classList.remove("noactive");
-  //       }
-  //       if (i > 1) {
-  //         elements[i - 2].classList.remove("noactive");
-  //       }
-  //       if (i == 0) {
-  //         elements[elements.length - 1].classList.replace("active", "noactive");
-  //         elements[elements.length - 2].classList.remove("noactive");
-  //       }
-  //       i = (i + 1) % elements.length;
-  //     }, 2000);
-
-  // }
-
   // utility__slider
 
   let prevBtn = document.querySelector(".button-prev"),

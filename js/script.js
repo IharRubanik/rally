@@ -43,7 +43,11 @@ window.onload = function () {
     mediaQuery375 = window.matchMedia("only screen and (max-width: 600px)");
 
   function aspectRatio() {
-    if(!mediaQuery1024.matches || !mediaQuery1024.matches || !mediaQuery375.matches ) {
+    if (
+      !mediaQuery1024.matches ||
+      !mediaQuery1024.matches ||
+      !mediaQuery375.matches
+    ) {
       a = 3;
       b = 3.5;
       c = 4;
@@ -72,9 +76,7 @@ window.onload = function () {
       a = 2.5;
       b = 3;
       c = 3.5;
-    } 
-    
-  
+    }
   }
   aspectRatio();
 
@@ -269,25 +271,51 @@ window.onload = function () {
   addClasses(colectionSlide4);
   addClasses(colectionSlide5);
   addClasses(colectionSlide6);
+
   function addClasses(elements) {
     let i = 0;
-    setInterval(function () {
-      elements[i].classList.add("active");
-      if (i > 0) {
-        elements[i - 1].classList.remove("active");
-        elements[i - 1].classList.add("noactive");
-        elements[elements.length - 1].classList.remove("noactive");
-      }
-      if (i > 1) {
-        elements[i - 2].classList.remove("noactive");
-      }
-      if (i == 0) {
-        elements[elements.length - 1].classList.replace("active", "noactive");
-        elements[elements.length - 2].classList.remove("noactive");
-      }
-      i = (i + 1) % elements.length;
-    }, 2000);
+    function interval() {
+      setTimeout(() => {
+        elements[i].classList.add("active");
+        if (i > 0) {
+          elements[i - 1].classList.remove("active");
+          elements[i - 1].classList.add("noactive");
+          elements[elements.length - 1].classList.remove("noactive");
+        }
+        if (i > 1) {
+          elements[i - 2].classList.remove("noactive");
+        }
+        if (i == 0) {
+          elements[elements.length - 1].classList.replace("active", "noactive");
+          elements[elements.length - 2].classList.remove("noactive");
+        }
+        i = (i + 1) % elements.length;
+        interval();
+      }, 2000);
+    }
+    interval();
   }
+
+  // function addClasses(elements) {
+  //   let i = 0;
+  //     setTimeout(() => {
+  //       elements[i].classList.add("active");
+  //       if (i > 0) {
+  //         elements[i - 1].classList.remove("active");
+  //         elements[i - 1].classList.add("noactive");
+  //         elements[elements.length - 1].classList.remove("noactive");
+  //       }
+  //       if (i > 1) {
+  //         elements[i - 2].classList.remove("noactive");
+  //       }
+  //       if (i == 0) {
+  //         elements[elements.length - 1].classList.replace("active", "noactive");
+  //         elements[elements.length - 2].classList.remove("noactive");
+  //       }
+  //       i = (i + 1) % elements.length;
+  //     }, 2000);
+
+  // }
 
   // utility__slider
 
